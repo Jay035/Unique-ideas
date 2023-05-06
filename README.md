@@ -1,1 +1,1 @@
-# Magno
+# Unique ideas
