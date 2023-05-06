@@ -3,11 +3,11 @@ import Skills from "./Skills";
 
 export default function AboutMe() {
   return (
-    <section id="about" className="px-8 sm:px-14 xl:px-[100px] pb-[106px]">
+    <section id="about" className="pt-5 px-8 sm:px-14 xl:px-[100px] pb-[106px]">
       <h2 className="tracking-[-0.03em] text-3xl md:text-5xl mb-[15px]">
         ABOUT ME
       </h2>
-      <div className="pb-[100px]">
+      <div className="pb-[100px] max-w-[991px]">
         <p className="text-[#D0D5DD] tracking-wide text-lg md:text-xl pb-6">
           I’m a Product Designer who enjoys the process of taking products from
           0 to 1, navigating from product strategy and customer feedback,
@@ -23,13 +23,12 @@ export default function AboutMe() {
 
         <p className="text-[#D0D5DD] tracking-wide text-lg md:text-xl">
           I love to identify as a Visual thinker who creates solutions that make
-          life better through digital products
+          life better through digital products.
         </p>
       </div>
       <div className="grid gap-20 lg:gap-24 lg:grid-cols-2">
-
-      <Experiences />
-      <Skills />
+        <Experiences />
+        <Skills />
       </div>
     </section>
   );

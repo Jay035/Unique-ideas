@@ -3,7 +3,7 @@ import frame from "../../assets/Frame.svg";
 
 export default function HeroSection() {
   return (
-    <section className="mb-[210px] px-8 sm:px-14 xl:px-[100px] mt-20 xl:mt-[150px] max-w-[1200px]">
+    <section className="mb-[190px] px-8 sm:px-14 xl:px-[100px] mt-20 xl:mt-[150px] max-w-[1200px]">
       <img
         className="w-32 md:w-[146px] mb-8"
         src={avatar}

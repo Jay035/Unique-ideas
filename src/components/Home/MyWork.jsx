@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function MyWork() {
   return (
-    <section className="mb-[160px]" id="myWorks">
+    <section className="mb-[140px] pt-5" id="myWorks">
       <h2 className="tracking-[-0.03em] px-8 sm:px-14 xl:px-20 text-3xl md:text-5xl">
         MY WORK
       </h2>

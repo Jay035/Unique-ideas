@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 import { Power3, gsap } from "gsap";
 import { useRef, useState } from "react";
 import { useLayoutEffect } from "react";
@@ -48,13 +48,19 @@ export function Navbar() {
         } absolute top-0 bg-[#111111] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
         <ul className="list-none flex mt-[50%] lg:mt-0 flex-col items-center gap-9 lg:flex-row">
-          <NavLink to="" className="lg:text-2xl">WORK</NavLink>
-          <NavLink to="" className="lg:text-2xl">ABOUT</NavLink>
-          <NavLink to="" className="lg:text-2xl">CONTACT</NavLink>
+          <NavHashLink to="/#myWorks" className="lg:text-2xl hover:font-bold">
+            WORK
+          </NavHashLink>
+          <NavHashLink to="/#about" className="lg:text-2xl hover:font-bold">
+            ABOUT
+          </NavHashLink>
+          <NavHashLink to="/#contact" className="lg:text-2xl hover:font-bold">
+            CONTACT
+          </NavHashLink>
           <button className="">
             <a
               href="\"
-              className="flex items-center border rounded-[30px] px-4 py-3 hover:bg-[#9E77ED] hover:border-[#9E77ED]"
+              className="flex items-center gap-[10px] border rounded-[30px] px-4 py-3 hover:bg-[#9E77ED] hover:border-[#9E77ED]"
             >
               MY RESUME
               <img src={arrowLeft} alt="" />
@@ -63,15 +69,6 @@ export function Navbar() {
         </ul>
       </section>
 
-      {/* <button className="hidden lg:flex">
-        <a
-          href="\"
-          className="flex items-center border rounded-[30px] px-4 py-3 hover:bg-[#9E77ED] hover:border-[#9E77ED]"
-        >
-          MY RESUME
-          <img src={arrowLeft} alt="" />
-        </a>
-      </button> */}
       <Hamburger
         checkboxState={checkboxState}
         setCheckboxState={setCheckboxState}
