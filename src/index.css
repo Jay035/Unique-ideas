@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Open+Sans:wght@300;400;500&family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("/fonts/neue-helvetica-cufonfonts/Helvetica\ Neue\ LT\ 75\ Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest Regular";
+  src: url("/fonts/Onest/TTF/Onest-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/NeueHaasDisplayRoman.ttf");
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.pText{
+  font-family: "Onest Regular",  sans-serif;
+}
+
+.active {
+  font-weight: 900;
+}
