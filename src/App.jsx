@@ -6,6 +6,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
+const SingleProject = lazy(() => import("./pages/SingleProject"));
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:name" element={<SingleProject />} />
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </Suspense>

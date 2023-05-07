@@ -28,10 +28,10 @@ body {
   overflow-x: hidden;
 }
 
-.pText{
+.font-onest{
   font-family: "Onest Regular",  sans-serif;
 }
 
-.active {
+/* .active {
   font-weight: 900;
-}
+} */

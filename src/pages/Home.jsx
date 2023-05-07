@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
   return (
     <>
-    <main className="text-white">
+    <main className="text-white bg-[#111111]">
       <HeroSection />
       <MyWork />
       <AboutMe />

@@ -65,3 +65,48 @@ export const SkillsData = [
     style: "",
   },
 ];
+
+export const projectsData = [
+  {
+    name: "OfficeHR",
+    year: "2022",
+    style: "border-t border-[#3C414B]",
+    tag: ["HR", "People Management"],
+    disabled: false,
+  },
+  {
+    name: "Hang",
+    year: "2023",
+    style: "border-t border-[#3C414B]",
+    tag: [],
+    disabled: false,
+  },
+  {
+    name: "Gifta",
+    year: "2022",
+    style: "border-t border-[#3C414B]",
+    tag: [],
+    disabled: false,
+  },
+  {
+    name: "ID-UNILAG",
+    year: "2023",
+    style: "border-t border-[#3C414B]",
+    tag: [],
+    disabled: false,
+  },
+  {
+    name: "TidePay",
+    year: "2023",
+    style: "border-t border-[#3C414B]",
+    tag: [],
+    disabled: true,
+  },
+  {
+    name: "SoliMax",
+    year: "2023",
+    style: "border-y border-[#3C414B]",
+    tag: [],
+    disabled: true,
+  },
+];
