@@ -8,28 +8,27 @@ export default function HeroSection() {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(".hero-item", {
-        duration: 5,
-        stagger: {
-          amount: 0.7,
-        },
-        ease: Power4,
-      });
-      gsap.from(".hero-img", {
-        x: -100,
-        opacity: 0,
-      });
-      gsap.from(".text", {
-        y: -100,
-        opacity: 0,
-      });
-      gsap.from(".pText", {
-        x: 100,
-        opacity: 0,
-      });
+      // gsap.from(".hero-item", {
+      //   duration: 2,
+      //   stagger: {
+      //     amount: 0.4,
+      //   },
+      //   ease: Power3.easeIn,
+      //   opacity: 0,
+      // });
+      // gsap.from(".hero-img", {
+      //   x: -100,
+      // });
+      // gsap.from(".text", {
+      //   y: -100,
+      // });
+      // gsap.from(".pText", {
+      //   x: 100,
+      // });
     }, hero);
     return () => ctx.revert();
   }, []);
+
   return (
     <section
       ref={hero}
@@ -51,7 +50,7 @@ export default function HeroSection() {
           PRODUCT DESIGNER
         </span>
       </h1>
-      <p className="pText font-onest mt-8 md:text-xl lg:text-2xl">
+      <p className="hero-item pText text font-onest mt-8 md:text-xl lg:text-2xl">
         I’m a designer whose focus is to not only make interfaces that work
         well, but also ones that are enjoyable to use. I have a strong
         enthusiasm for my work and constantly strive to improve my abilities in
