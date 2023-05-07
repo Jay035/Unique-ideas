@@ -10,7 +10,7 @@ export default function Projects() {
       navigate(`/projects/${name}`);
     }else return;
   };
-  
+
   return (
     <div className="bg-[#111111] px-8 sm:px-14 xl:px-[100px] pb-[101px] mt-12">
       <section className="flex justify-between items-end mb-[120px]">
@@ -31,7 +31,7 @@ export default function Projects() {
               onClick={() =>
                 showProjectDetails(project?.name, project?.disabled)
               }
-              className={`${project?.style} cursor-pointer flex items-center py-4 lg:py-8 gap-8`}
+              className={`${project?.style} ${!project?.disabled ? 'cursor-pointer' : 'cursor-default'} flex items-center py-4 lg:py-8 gap-8`}
             >
               <p className="border rounded-full py-2 md:py-3 px-4 border-[#D0D5DD]">
                 {project?.year}

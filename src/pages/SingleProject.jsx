@@ -20,10 +20,10 @@ export default function SingleProject() {
     getSingleProject();
   }, []);
   return (
-    <main className="text-white mt-16 md:mt-20 lg:mt-[216px]">
+    <main className="text-white mt-16 md:mt-20">
       <Link to="/projects">
         <img
-          className="px-8 sm:px-14 xl:px-[100px] w-28 mb-16 md:mb-20 lg:w-32"
+          className="px-8 sm:px-14 xl:px-[100px] w-28 mb-16 md:mb-20 lg:w-40 xl:w-72"
           src={arrowLeftCircle}
           alt="arrow left"
         />
@@ -45,38 +45,40 @@ export default function SingleProject() {
         </h1>
       </section>
       <section className="h-72 w-full xl:h-[863px] bg-slate-200"></section>
-      <section className="px-8 sm:px-14 xl:px-[100px] grid lg:grid-cols-2 gap-6 lg:gap-[127px] text-black py-[100px] bg-white">
-        <h2 className="font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
-          Why <span className="text-[#5D5FEF] block">{project?.name} ?</span>
-        </h2>
-        <div className="text-[#344054] font-onest md:text-xl lg:text-2xl ">
-          <p className="tracking-[-0.03em]">
-            When i was approached to be a member of the team to create OfficeHR,
-            I was delighted by the idea on what it is to be about. Having
-            experienced working in start-ups, I could relate to how difficult
-            carrying out HR processes was to the management. From hiring,
-            onboarding, team management down to payments was a struggle. To
-            these firms especially SMEs, it led to a lack of organization, time
-            consuming in administrative tasks and even difficulty in tracking
-            employee information and performance.{" "}
-          </p>
-          <p className="tracking-[-0.03em]">
-            A migraine existed that needed to be attended to, We needed to
-            create a solution, one that will help businesses, especially SMEs
-            take care of their team while accommodating their pocket sizes. The
-            solution is OfficeHR, an efficient and user friendly HRMS solution
-            that caters to all the core HR processes, helping organizations
-            better streamline their HR operations.
-          </p>
+      <section className="px-8 sm:px-14 xl:px-[100px] text-black py-[100px] bg-white">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-0 lg:justify-between mb-[100px]">
+          <h2 className="font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
+            Why <span className="text-[#5D5FEF] block">{project?.name} ?</span>
+          </h2>
+          <div className="text-[#344054] font-onest md:text-xl lg:text-2xl">
+            <p className="tracking-[-0.03em]">
+              When i was approached to be a member of the team to create
+              OfficeHR, I was delighted by the idea on what it is to be about.
+              Having experienced working in start-ups, I could relate to how
+              difficult carrying out HR processes was to the management. From
+              hiring, onboarding, team management down to payments was a
+              struggle. To these firms especially SMEs, it led to a lack of
+              organization, time consuming in administrative tasks and even
+              difficulty in tracking employee information and performance.{" "}
+            </p>
+            <p className="tracking-[-0.03em]">
+              A migraine existed that needed to be attended to, We needed to
+              create a solution, one that will help businesses, especially SMEs
+              take care of their team while accommodating their pocket sizes.
+              The solution is OfficeHR, an efficient and user friendly HRMS
+              solution that caters to all the core HR processes, helping
+              organizations better streamline their HR operations.
+            </p>
+          </div>
         </div>
-        <div className="h-72 w-full xl:h-[863px] bg-slate-200"></div>
+        <div className="h-72 w-full bg-slate-200"></div>
       </section>
       {/* WHAT IS ? */}
       <section className="px-8 sm:px-14 xl:px-[100px] bg-white text-black">
         <h2 className="font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
           What is <span className="text-[#5D5FEF]">{project?.name} ?</span>
         </h2>
-        <p className="mt-6 text-[#344054]">
+        <p className="mt-6 text-[#344054] md:text-xl lg:text-2xl">
           OfficeHR is a comprehensive HR platform offering a wide range of
           features to manage all aspects of the HR process from hiring to
           offboarding. It is intuitive, user friendly and easy to navigate,
@@ -84,8 +86,8 @@ export default function SingleProject() {
           efficiently manage their tasks while creating an enabling environment
           for employees to easily get acquainted with their workspace.
         </p>
-        <div className="h-72 w-full xl:h-[863px] mt-12 mb-[100px] bg-slate-200"></div>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="h-72 w-full mt-12 mb-[100px] bg-slate-200"></div>
+        <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
           <div className="flex flex-col gap-4">
             <h4 className="tracking-[-0.01em] font-semibold text-xl md:text-2xl">
               My Contribution
@@ -170,7 +172,7 @@ export default function SingleProject() {
           research findings that validated our hypothesis, we dived into
           outlining key HR solutions to be accommodated.
         </p>
-        <div className="font-onest">
+        <div className="font-onest md:text-xl lg:text-2xl">
           <span>They include</span>
           <ul className="list-disc ml-9 mt-2 grid md:grid-cols-2 gap-x-4 gap-y-2">
             <li className="tracking-[-0.03em]">Hiring and Engineering</li>
@@ -201,7 +203,7 @@ export default function SingleProject() {
         </h2>
         <div className="flex flex-col gap-[100px]">
           <div className="mt-8">
-            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-[32px]">
+            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-2xl lg:text-[32px]">
               <img
                 className="-mt-1 w-4 md:w-5 lg:w-6"
                 src={arrowDouble}
@@ -219,7 +221,7 @@ export default function SingleProject() {
             <div className="bg-slate-300 h-[100px] w-full"></div>
           </div>
           <div className="">
-            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-[32px]">
+            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-2xl lg:text-[32px]">
               <img
                 className="-mt-1 w-4 md:w-5 lg:w-6"
                 src={arrowDouble}
@@ -237,7 +239,7 @@ export default function SingleProject() {
             <div className="bg-slate-300 h-[100px] w-full"></div>
           </div>
           <div className="">
-            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-[32px]">
+            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-2xl lg:text-[32px]">
               <img
                 className="-mt-1 w-4 md:w-5 lg:w-6"
                 src={arrowDouble}
@@ -255,7 +257,7 @@ export default function SingleProject() {
             <div className="bg-slate-300 h-[100px] w-full"></div>
           </div>
           <div className="">
-            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-[32px]">
+            <h3 className="flex items-center gap-4 font-semibold text-xl md:text-2xl lg:text-[32px]">
               <img
                 className="-mt-1 w-4 md:w-5 lg:w-6"
                 src={arrowDouble}
@@ -279,7 +281,7 @@ export default function SingleProject() {
         <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
           Testing
         </h2>
-        <p className="mt-8">
+        <p className="mt-8 font-onest md:text-xl lg:text-2xl">
           After completion of the first version of the designs, I proceeded to
           conduct remote testing. During this phase, I asked participants to
           complete various tasks on the platform such as hiring an employee,
@@ -294,11 +296,11 @@ export default function SingleProject() {
         <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
           Challenges and Lessons
         </h2>
-        <p className="mt-8 mb-4">
+        <p className="mt-8 mb-4 font-onest md:text-xl lg:text-2xl">
           Working as a solo UX Designer came with its challenges. Those
           challenges though overcame include:
         </p>
-        <ul className="flex flex-col gap-[26px]">
+        <ul className="flex flex-col gap-[26px] font-onest">
           <li className="flex items-start gap-2 md:text-xl lg:text-2xl">
             <img className="w-4 md:w-5 lg:w-6 mt-1" src={arrowDouble} alt="" />{" "}
             The requirements got somewhat complex because a HR management system

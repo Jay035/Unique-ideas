@@ -10,7 +10,7 @@ const SingleProject = lazy(() => import("./pages/SingleProject"));
 
 function App() {
   return (
-    <div className="scroll-smooth bg-[#111111]">
+    <div className="scroll-smooth overflow-y-scroll bg-[#111111]">
       <Router>
         <Suspense fallback={<Loader />}>
           <Navbar />
