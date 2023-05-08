@@ -41,12 +41,12 @@ export default function HeroSection() {
       />
       <h1 className="">
         <span className="hero-item text flex gap-3 md:gap-[18px] items-center mb-2">
-          <span className="text-4xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
+          <span className="text-5xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
             HI, I’M IFY
           </span>
-          <img className="w-9 md:w-[60px] lg:w-[72px]" src={frame} alt="" />
+          <img className="w-10 md:w-[60px] lg:w-[72px]" src={frame} alt="" />
         </span>
-        <span className="hero-item text text-4xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
+        <span className="hero-item text text-5xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
           PRODUCT DESIGNER
         </span>
       </h1>
