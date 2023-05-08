@@ -58,7 +58,7 @@ export function Navbar() {
       <section
         className={`${
           menuOpen
-            ? `left-0 px-8 pt-8 gap-6 opacity-100 z-[99999] ease-out lg:pt-0 transition-all duration-100 delay-75`
+            ? `left-0 px-8 pt-8 gap-6 opacity-100 z-[1000] ease-out lg:pt-0 transition-all duration-100 delay-75`
             : `-left-full opacity-0 lg:opacity-100 lg:left-0 transition-all duration-100 delay-75`
         } absolute top-0 bg-[#111111] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
