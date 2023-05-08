@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="scroll-smooth overflow-y-scroll overflow-x-hidden bg-[#111111]">
       <Router>
-        {/* <Suspense> */}
+        <Suspense fallback={<Loader />}>
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="/projects/:name" element={<SingleProject />} />
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
-        {/* </Suspense> */}
+        </Suspense>
       </Router>
     </div>
   );

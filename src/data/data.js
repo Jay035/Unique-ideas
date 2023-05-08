@@ -68,11 +68,30 @@ export const SkillsData = [
 
 import officeHrHeroImg from "../assets/officeHR.png";
 import officeHrExecutionImg from "../assets/officeHR-execution.png";
+import OfficeHRfirstMedia from "../assets/first media/HRMS.mp4";
+import OfficeHRDesignVideo1 from "../assets/hrms/Hiring and Onboarding.mp4";
+import OfficeHRDesignVideo2 from "../assets/hrms/Employee Management.mp4";
+import OfficeHRDesignVideo3 from "../assets/hrms/Performance Management.mp4";
+import OfficeHRDesignVideo4 from "../assets/hrms/Payments.mp4";
 import hangHeroImg from "../assets/HangHero.png";
 import hangExecutionImg from "../assets/HangExecutionImg.png";
 import hangOverviewImg from "../assets/hangBanner.png";
-import hangDesign1 from "../assets/hang-1.png";
+import hangWhatImg from "../assets/hang-1.png";
+import hangDesign1 from "../assets/hang-design-1.png";
+import hangDesign2 from "../assets/hang-design-2.png";
+import hangDesign3 from "../assets/hang-design-3.png";
+import hangDesign4 from "../assets/hang-design-4.png";
+import giftaHero from "../assets/gifta Hero.png";
+import giftaExecutionImg from "../assets/gifta-execution.png";
+import giftaExample1 from "../assets/gifta-example-1.png";
+import giftaExample2 from "../assets/gifta-example-2.png";
+import giftaExample3 from "../assets/gifta-example-3.png";
 import giftaDesign1 from "../assets/gifta-design-1.png";
+import giftaVideo1 from "../assets/Gifta/Create list.mp4";
+import giftaVideo2 from "../assets/Gifta/Create organization.mp4";
+import giftaVideo3 from "../assets/Gifta/payments.mp4";
+import GiftaFirstMedia from "../assets/first media/Gifta.mp4";
+import IdUNILAGirstMedia from "../assets/first media/Unilag ID.mp4";
 
 export const projectsData = [
   // officeHR
@@ -87,6 +106,7 @@ export const projectsData = [
     heroImg: officeHrHeroImg,
     overview: "",
     overviewImg: "",
+    firstMedia: OfficeHRfirstMedia,
     why: [
       "When i was approached to be a member of the team to create OfficeHR, I was delighted by the idea on what it is to be about. Having experienced working in start-ups, I could relate to how difficult carrying out HR processes was to the management. From hiring, onboarding, team management down to payments was astruggle. To these firms especially SMEs, it led to a lack of organization, time consuming in administrative tasks and even difficulty in tracking employee information and performance.",
       "A migraine existed that needed to be attended to, We needed to create a solution, one that will help businesses, especially SMEs take care of their team while accommodating their pocket sizes. The solution is OfficeHR, an efficient and user friendly HRMS solution that caters to all the core HR processes, helping organizations better streamline their HR operations.",
@@ -128,25 +148,25 @@ export const projectsData = [
     executionImg: officeHrExecutionImg,
     design: [
       {
-        img: "",
+        video: OfficeHRDesignVideo1,
         title: "Hiring & Onboarding",
         description:
           "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
       },
       {
-        img: "",
+        video: OfficeHRDesignVideo2,
         title: "Employment Management",
         description:
           "OfficeHR provides a centralized platform for managing employee data, including personal information, employment history, and performance evaluations. HR professionals can easily access this information, track progress, and make changes as needed.",
       },
       {
-        img: "",
+        video: OfficeHRDesignVideo3,
         title: "Performance Management",
         description:
           "OfficeHR provides tools for setting and tracking goals, conducting performance evaluations, and providing feedback to employees. This helps to ensure that employees are meeting expectations and contributing to the company's success.",
       },
       {
-        img: "",
+        video: OfficeHRDesignVideo4,
         title: "Payroll and Benefits",
         description:
           "OfficeHR offers tools to manage payroll and benefits, including automatic calculations, tax deductions, and benefits administration. This helps to reduce errors and streamline the payroll process.",
@@ -185,6 +205,7 @@ export const projectsData = [
       "One of the primary objectives of Hang is to foster a sense of community. By bringing people together and promoting physical interaction, Hang aims to create a space where individuals can connect with others who share their interests, values, and goals. This sense of community helps combat feelings of loneliness and alienation that can arise when relying solely on digital communication.",
       "To address potential safety concerns, Hang includes features that help users vet potential group members and ensure the safety of all participants. Users can verify their identities through the platform, and community administrators can approve or reject members requests to attend events based on user profiles and shared interests.",
     ],
+    whatImg: hangWhatImg,
     myContribution: ["Product Strategy", "User Research", "UX/UI Design"],
     team: ["2 Product Designers", "2 Brand Designers"],
     primaryResearch: [],
@@ -214,25 +235,25 @@ export const projectsData = [
     executionImg: hangExecutionImg,
     design: [
       {
-        img: "",
+        img: hangDesign1,
         title: "Onboarding and Identity Verification",
         description:
           "Registration on Hang is a simple and straightforward process. Users are required to provide basic information. To ensure the safety and security of our users, Hang also includes identity verification measures. Users can choose to verify their identity by providing a government-issued ID, such as a passport or driver's license. This helps to prevent fraudulent accounts and ensures that users can trust the identity of the individuals they are interacting with on the platform.",
       },
       {
-        img: "",
+        img: hangDesign2,
         title: "Create and Manage Communities",
         description:
           "Hang aims to help users connect and build communities based on shared interests and activities. By providing a platform for users to create and manage communities, Hang encourages in-person interactions and fosters a sense of belonging.",
       },
       {
-        img: "",
+        img: hangDesign3,
         title: "Create and Manage Events",
         description:
           "Hang aims to help users connect and build communities based on shared interests and activities. By providing a platform for users to create and manage communities, Hang encourages in-person interactions and fosters a sense of belonging.",
       },
       {
-        img: "",
+        img: hangDesign4,
         title: "Profile Settings",
         description:
           "The profile feature on Hang allows users to create a personal profile that showcases their interests and personality. Users can add a brief description about themselves, including their hobbies, interests, and professional background. This helps other users to get a better understanding of who they are and what they are interested in.",
@@ -255,13 +276,14 @@ export const projectsData = [
     style: "border-t border-[#3C414B]",
     tag: [],
     disabled: false,
-    heroImg: hangHeroImg,
+    heroImg: giftaHero,
+    firstMedia: GiftaFirstMedia,
     overview: [],
     why: [
       "Have you ever scrolled through social media and come across a post from a friend sharing their wishlist on their special day? It can be exciting to see what they want and imagine the joy of giving them the perfect gift. But what if there was an easier way to make the gifting process hassle-free and enjoyable for both the recipient and the giver?",
     ],
     examplesText: "Here are a few examples",
-    examples: [],
+    examples: [giftaExample1, giftaExample2, giftaExample3],
     what: [
       "Gifta is a unique platform that offers a solution to the common problem of gifting – making it easier to give and receive the perfect gift. The platform allows users to create a wishlist, add items, and get shareable links they could share it with their loved ones. It is a simple and effective way for individuals to create a list of items they want for a special occasion, like a birthday or anniversary. The wishlist is fully customizable and allows users to add items and images of the products they want. Users can also add links to the specific website where they found the item, making it easier for others to purchase it directly.",
       "Organizations can also use Gifta to receive contributions for fundraising campaigns, charity events, and other special occasions. The platform makes the process of fundraising much more efficient and allows organizations to focus on their cause rather than the logistics of collecting funds. With Gifta, organizations can create a campaign, share it with their supporters, and receive contributions towards their fundraising goals.",
@@ -288,32 +310,32 @@ export const projectsData = [
     ],
     execution:
       "For a platform to be used by a diverse target audience, I had to ensure the design easy to use and navigate. So to kick that off, i put up a user flow, containing all components of the web app laid out in hierarchy",
-    executionImg: hangExecutionImg,
+    executionImg: giftaExecutionImg,
     design: [
       {
-        img: giftaDesign1,
+        video: giftaVideo1,
         title: "Wishlist Creation and Management",
         description:
           "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
       },
       {
-        img: "",
+        video: giftaVideo2,
         title: "Organization Fundraising",
         description:
           "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
       },
       {
-        img: "",
+        video: giftaVideo3,
         title: "Payments",
         description:
           "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
       },
-      {
-        img: "",
-        title: "Profile Settings",
-        description:
-          "The profile feature on Hang allows users to create a personal profile that showcases their interests and personality. Users can add a brief description about themselves, including their hobbies, interests, and professional background. This helps other users to get a better understanding of who they are and what they are interested in.",
-      },
+      // {
+      //   img: "",
+      //   title: "Profile Settings",
+      //   description:
+      //     "The profile feature on Hang allows users to create a personal profile that showcases their interests and personality. Users can add a brief description about themselves, including their hobbies, interests, and professional background. This helps other users to get a better understanding of who they are and what they are interested in.",
+      // },
     ],
     testing: [
       "User testing and feedback played a role in the final look of the Gifta platform. By testing our designs with real people, I, in sync with the rest of the team was able to identify areas where the platform could be improved and address any usability issues. We had one goal, and that was to create a platform that is user friendly and visually appealing and the feedback we received showed we are headed in the right direction. The Gifta team is committed to constantly improving the platform to be in line with our users demands.",
@@ -331,6 +353,7 @@ export const projectsData = [
     tag: ["DigitalID", "Security"],
     disabled: false,
     heroImg: hangHeroImg,
+    firstMedia: IdUNILAGirstMedia,
     overview: [],
     why: [
       "As someone who attended a public university in Nigeria, I’ve experienced first hand how a regular student goes through a bunch of avoidable stress trying to manually complete processes that ideally, can be automated. The School ID collection is one out of many that needs a total overhaul of its process.",
@@ -354,8 +377,7 @@ export const projectsData = [
     questionsAsked: [],
     primaryResearch: [],
     secondaryResearch: [],
-    additionalResearch:
-      "",
+    additionalResearch: "",
     definingtext:
       "With clear set out goals to propose the need for a digital ID creation platform, we dived into outlining key features to be accommodated.",
     productOfferings: [
@@ -369,36 +391,31 @@ export const projectsData = [
     executionImg: hangExecutionImg,
     design: [
       {
-        img: giftaDesign1,
+        video: giftaVideo1,
         title: "",
-        description:
-          "",
+        description: "",
+      },
+      {
+        video: giftaVideo2,
+        title: "",
+        description: "",
+      },
+      {
+        video: giftaVideo3,
+        title: "",
+        description: "",
       },
       {
         img: giftaDesign1,
         title: "",
-        description:
-          "",
-      },
-      {
-        img: giftaDesign1,
-        title: "",
-        description:
-          "",
-      },
-      {
-        img: giftaDesign1,
-        title: "",
-        description:
-          "",
+        description: "",
       },
     ],
-    testing: [
-      "",
-    ],
+    testing: [""],
     challengeAndLessonsText: "",
     challenges: [],
-    outcome: "After our proposal presentation for ID-UNILAG, the departmental management has approved the project for implementation. The proposal will now be presented to the senate for final approval. If approved, ID-UNILAG will be developed and implemented for use by the university, providing a user-friendly, efficient, and secure platform for student ID card processing. The implementation of ID-UNILAG is expected to improve the overall experience for both students and administrators and streamline the ID card creation process, saving time and reducing the burden of physical processing.",
+    outcome:
+      "After our proposal presentation for ID-UNILAG, the departmental management has approved the project for implementation. The proposal will now be presented to the senate for final approval. If approved, ID-UNILAG will be developed and implemented for use by the university, providing a user-friendly, efficient, and secure platform for student ID card processing. The implementation of ID-UNILAG is expected to improve the overall experience for both students and administrators and streamline the ID card creation process, saving time and reducing the burden of physical processing.",
   },
   {
     name: "TidePay",

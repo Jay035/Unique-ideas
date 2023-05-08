@@ -6,6 +6,7 @@ import arrowDouble from "../assets/arrow-double-up.svg";
 import arrowLeftCircle from "../assets/arrow-left-circle.svg";
 import { Link } from "react-router-dom";
 import Transition from "../components/Transition";
+import emoji from "../assets/Emoji.svg";
 
 export default function SingleProject() {
   const { name } = useParams();
@@ -34,14 +35,17 @@ export default function SingleProject() {
         </Link>
         <section className="px-8 sm:px-14 xl:px-[100px]">
           <div className="flex items-center gap-2">
-            <span className="border rounded-[30px] px-4 py-2 lg:py-3 md:text-xl 2xl:text-2xl tracking-[-0.03em]">
-              HR
-            </span>
-            <span className="border rounded-[30px] px-4 py-2 lg:py-3 md:text-xl 2xl:text-2xl tracking-[-0.03em]">
-              People Management
-            </span>
+            {project?.tags?.map((tag, index) => (
+              <span
+                key={index}
+                className="border rounded-[30px] px-4 py-2 lg:py-3 md:text-xl 2xl:text-2xl tracking-[-0.03em]"
+              >
+                {tag}
+              </span>
+            ))}
+
             <span className="border px-4 py-2 lg:py-3 border-[#5D5FEF] rounded-[30px] md:text-xl 2xl:text-2xl tracking-[-0.03em]">
-              2022
+              {project?.year}
             </span>
           </div>
           <h1 className="text-[40px] md:text-5xl xl:text-[120px] mt-4 mb-[42px]">
@@ -54,8 +58,15 @@ export default function SingleProject() {
         <section className="px-8 sm:px-14 xl:px-[100px] text-black py-[100px] bg-white">
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-0 lg:justify-between mb-[100px]">
             <h2 className="font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
-              Why{" "}
-              <span className="text-[#5D5FEF] block">{project?.name} ?</span>
+              {project?.overview && "Overview"}
+              {!project?.overview && (
+                <p>
+                  Why
+                  <span className="text-[#5D5FEF] block">
+                    {project?.name} ?
+                  </span>{" "}
+                </p>
+              )}
             </h2>
             <div className="text-[#344054] font-onest flex flex-col gap-4 md:text-xl lg:text-2xl">
               {project?.why &&
@@ -73,27 +84,29 @@ export default function SingleProject() {
               <p className="tracking-[-0.03em]">
                 {project?.additionalResearch}
               </p>
-              {/* // <p className="tracking-[-0.03em]">
-            //   When i was approached to be a member of the team to create
-            //   OfficeHR, I was delighted by the idea on what it is to be about.
-            //   Having experienced working in start-ups, I could relate to how
-            //   difficult carrying out HR processes was to the management. From
-            //   hiring, onboarding, team management down to payments was a
-            //   struggle. To these firms especially SMEs, it led to a lack of
-            //   organization, time consuming in administrative tasks and even
-            //   difficulty in tracking employee information and performance.{" "}
-            // </p>
-            // <p className="tracking-[-0.03em]">
-            //   A migraine existed that needed to be attended to, We needed to
-            //   create a solution, one that will help businesses, especially SMEs
-            //   take care of their team while accommodating their pocket sizes.
-            //   The solution is OfficeHR, an efficient and user friendly HRMS
-            //   solution that caters to all the core HR processes, helping
-            //   organizations better streamline their HR operations.
-            // </p> */}
             </div>
           </div>
-          <div className="h-72 w-full bg-slate-200"></div>
+          {project?.examples && (
+            <div className="">
+              <p className="flex items-center gap-2 md:text-xl lg:text-2xl">
+                {project.examplesText}{" "}
+                <img className="w-8 lg:w-9" src={emoji} alt="emoji" />
+              </p>
+              <div className="flex gap-8 mt-4 flex-wrap">
+                {project?.examples &&
+                  project?.examples?.map((item, index) => (
+                    <img key={index} src={item} alt="project example" />
+                  ))}
+              </div>
+            </div>
+          )}
+          {project?.name !== "Gifta" && project?.firstMedia && (
+            <video autoPlay src={project?.firstMedia} alt="project preview" />
+          )}
+          {project?.overviewImg && (
+            <img src={project?.overviewImg} alt="project preview" />
+          )}
+          {/* <div className="h-72 w-full bg-slate-200"></div> */}
         </section>
         {/* WHAT IS ? */}
         <section className="px-8 sm:px-14 xl:px-[100px] bg-white text-black">
@@ -103,26 +116,26 @@ export default function SingleProject() {
           {project?.what?.map((item, index) => (
             <p className="mt-6 text-[#344054] md:text-xl lg:text-2xl">{item}</p>
           ))}
-          {/* <p className="mt-6 text-[#344054] md:text-xl lg:text-2xl">
-          OfficeHR is a comprehensive HR platform offering a wide range of
-          features to manage all aspects of the HR process from hiring to
-          offboarding. It is intuitive, user friendly and easy to navigate,
-          allowing business owners and HR professionals the liberty to
-          efficiently manage their tasks while creating an enabling environment
-          for employees to easily get acquainted with their workspace.
-        </p> */}
-          {project?.overviewImg && (
+          {project?.name === "Gifta" && project?.firstMedia && (
+            <video
+              className="mt-[30px] mb-[75px]"
+              autoPlay
+              src={project?.firstMedia}
+              alt="project preview"
+            />
+          )}
+          {project?.whatImg && (
             <img
               className="w-full mt-12 mb-[100px]"
-              src={project?.overviewImg}
+              src={project?.whatImg}
               alt="overview img"
             />
           )}
-          {!project?.overviewImg && (
+          {/* {!project?.whatImg && (
             <div className="h-72 w-full mt-12 mb-[100px] bg-slate-200"></div>
-          )}
+          )} */}
 
-          <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
+          <div className="mt-[74px] flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
             {project?.myContribution && (
               <div className="flex flex-col gap-4">
                 <h4 className="tracking-[-0.01em] font-semibold text-xl md:text-2xl">
@@ -270,10 +283,13 @@ export default function SingleProject() {
                 <p className="mb-8 md:text-xl lg:text-2xl mt-4 font-onest tracking-[-0.03em] text-[#344054]">
                   {design?.description}
                 </p>
-                {design?.img && <img src={project?.design?.img} alt="" />}
-                {!design?.img && (
-                  <div className="bg-slate-300 h-[82px] w-full"></div>
+                {design?.video && (
+                  <video autoPlay src={design?.video} alt="project preview" />
                 )}
+                {design?.img && <img src={design?.img} alt="project preview" />}
+                {/* {!design?.video && (
+                  <div className="bg-slate-300 h-[82px] w-full"></div>
+                )} */}
               </div>
             ))}
           </div>
@@ -296,12 +312,13 @@ export default function SingleProject() {
               Challenges and Lessons
             </h2>
           )}
-          {!project?.challengeAndLessonsText && (
-            <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
-              Outcome
-            </h2>
-          )}
-          <p className="mt-8 mb-4 font-onest md:text-xl lg:text-2xl">
+          {!project?.challengeAndLessonsText ||
+            (!project?.outcome && (
+              <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
+                Outcome
+              </h2>
+            ))}
+          <p className="pt-8 pb-4 font-onest md:text-xl lg:text-2xl">
             {project?.challengeAndLessonsText || project?.outcome}
           </p>
           {project?.challenges && (

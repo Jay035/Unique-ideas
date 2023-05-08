@@ -61,7 +61,7 @@ export default function Projects() {
               </div>
             ))}
           </div>
-          <div className="bg-[#D9D9D9] mt-20 lg:mt-0 w-full lg:min-w-[640px] h-96 lg:h-[798px]"></div>
+          <div className="hidden lg:flex bg-[#D9D9D9] mt-20 lg:mt-0 w-full lg:min-w-[640px] h-96 lg:h-[798px]"></div>
         </section>
       </div>
     </div>
