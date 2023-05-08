@@ -21,6 +21,10 @@
   src: url("/fonts/NeueHaasDisplayRoman.ttf");
 }
 
+*{
+  overflow-x: hidden;
+}
+
 body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
