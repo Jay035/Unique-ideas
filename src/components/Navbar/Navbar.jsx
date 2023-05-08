@@ -83,6 +83,7 @@ export function Navbar() {
           </HashLink>
           <button className="">
             <a
+              target="_blank"
               href="https://drive.google.com/file/d/1JofDXbneOPnXA_CZ3wPilAO6pHRz7-h6/view?usp=sharing "
               className="list_item flex items-center gap-[10px] border rounded-[30px] px-4 py-3 hover:bg-[#9E77ED] hover:border-[#9E77ED]"
             >

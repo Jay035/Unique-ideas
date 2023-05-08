@@ -63,7 +63,7 @@ export default function SingleProject() {
     <>
       <Transition />
 
-      <main className="text-white ">
+      <main className="text-white overflow-x-hidden">
         <div className="bg-[#111111] hero-item text pt-16 md:pt-20">
           <img
             onClick={redirect}
@@ -83,13 +83,20 @@ export default function SingleProject() {
               ))}
 
               <span
-                className={`border px-4 py-2 lg:py-3 border-[${project?.yearColor}] rounded-[30px] md:text-xl 2xl:text-2xl tracking-[-0.03em]`}
+                className={`border px-4 py-2 lg:py-3 ${
+                  project?.name === "Hang App"
+                    ? "border-[#9CFF8F] text-[#9CFF8F]"
+                    : "border-[#5D5FEF] text-[#5D5FEF]"
+                } rounded-[30px] md:text-xl 2xl:text-2xl tracking-[-0.03em]`}
               >
                 {project?.year}
               </span>
             </div>
             <h1 className="text-[40px] md:text-5xl xl:text-[120px] pt-4 pb-[42px]">
-              {project?.name}
+              {project?.name}{" "}
+              {project?.proposal && (
+                <span className="text-xl md:text-[32px]">( A Proposal )</span>
+              )}
             </h1>
           </section>
         </div>
@@ -331,14 +338,14 @@ export default function SingleProject() {
             <div className="flex flex-col md:gap-[100px]">
               {project?.design?.map((design, index) => (
                 <div key={index} className="mt-8">
-                  {!project?.name === "ID-UNILAG" && (
+                  {design?.title && (
                     <h3 className="flex items-center gap-4 font-semibold text-xl md:text-2xl lg:text-[32px]">
                       <img
                         className="-mt-1 w-4 md:w-5 lg:w-6"
                         src={arrowDouble}
                         alt="arrow"
                       />{" "}
-                      <span key={index}>{design.title}</span>
+                      <span>{design?.title}</span>
                     </h3>
                   )}
                   <p className="mb-8 md:text-xl lg:text-2xl mt-4 font-onest tracking-[-0.03em] text-[#344054]">

@@ -21,8 +21,8 @@
   src: url("/fonts/NeueHaasDisplayRoman.ttf");
 }
 
-*{
-  overflow-x: hidden;
+section > * {
+  overflow: hidden;
 }
 
 body {
@@ -32,8 +32,8 @@ body {
   overflow-x: hidden;
 }
 
-.font-onest{
-  font-family: "Onest Regular",  sans-serif;
+.font-onest {
+  font-family: "Onest Regular", sans-serif;
 }
 
 .active {

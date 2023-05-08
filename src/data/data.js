@@ -65,7 +65,7 @@ export const SkillsData = [
     style: "",
   },
 ];
-
+// OfficeHR
 import officeHrHeroImg from "../assets/officeHR.png";
 import officeHrExecutionImg from "../assets/officeHR-execution.png";
 import OfficeHRfirstMedia from "../assets/first media/HRMS.mp4";
@@ -73,6 +73,7 @@ import OfficeHRDesignVideo1 from "../assets/hrms/Hiring and Onboarding.mp4";
 import OfficeHRDesignVideo2 from "../assets/hrms/Employee Management.mp4";
 import OfficeHRDesignVideo3 from "../assets/hrms/Performance Management.mp4";
 import OfficeHRDesignVideo4 from "../assets/hrms/Payments.mp4";
+// HANG
 import hangHeroImg from "../assets/HangHero.png";
 import hangExecutionImg from "../assets/HangExecutionImg.png";
 import hangOverviewImg from "../assets/hangBanner.png";
@@ -81,6 +82,7 @@ import hangDesign1 from "../assets/hang-design-1.png";
 import hangDesign2 from "../assets/hang-design-2.png";
 import hangDesign3 from "../assets/hang-design-3.png";
 import hangDesign4 from "../assets/hang-design-4.png";
+// GIFTA
 import giftaHero from "../assets/gifta Hero.png";
 import giftaExecutionImg from "../assets/gifta-execution.png";
 import giftaExample1 from "../assets/gifta-example-1.png";
@@ -91,6 +93,7 @@ import giftaVideo1 from "../assets/Gifta/Create list.mp4";
 import giftaVideo2 from "../assets/Gifta/Create organization.mp4";
 import giftaVideo3 from "../assets/Gifta/payments.mp4";
 import GiftaFirstMedia from "../assets/first media/Gifta.mp4";
+// ID_UNILAG
 import IdUNILAGHero from "../assets/ID_UNILAG_Hero.png";
 import IdUNILAGirstMedia from "../assets/first media/Unilag ID.mp4";
 import IdUNILAGDesign1 from "../assets/ID_UNILAG_Design1.png";
@@ -99,6 +102,10 @@ import IdUNILAGDesign3 from "../assets/ID_UNILAG_Design3.png";
 import IdUNILAGDesign4 from "../assets/ID_UNILAG_Design4.png";
 import IdUNILAGDesign5 from "../assets/ID_UNILAG_Design5.png";
 import IdUNILAGDesign6 from "../assets/ID_UNILAG_Design6.png";
+// TidePay
+import TidePayHero from "../assets/TidePayHero.png";
+// SoliMax
+import SoliMaxHero from "../assets/SoliMaxHero.png";
 
 export const projectsData = [
   // officeHR
@@ -323,19 +330,19 @@ export const projectsData = [
         video: giftaVideo1,
         title: "Wishlist Creation and Management",
         description:
-          "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
+          "The wishlist feature of Hang is a central component of the platform that allows users to create and manage their wishlists. Users can easily add items to desired items of their choice.  It serves as a tool that helps users to keep track of their desired items while making it easier for their loved ones to find the perfect gift.",
       },
       {
         video: giftaVideo2,
         title: "Organization Fundraising",
         description:
-          "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
+          "Gifta is a platform that can be used by organizations, like NGOs, to raise funds for their causes. By creating a campaign on Gifta, organizations can easily share their fundraising goals with their supporters and receive contributions towards achieving them.",
       },
       {
         video: giftaVideo3,
         title: "Payments",
         description:
-          "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
+          "Contributions and withdrawals are an essential part of the Gifta platform, allowing users to receive and manage funds from their wishlist and campaigns. When someone makes a contribution to a user's wishlist item or campaign on Gifta, the funds are securely processed and added to the user's Gifta balance. The user can then use these funds to purchase the desired item or use them towards their campaign goal.",
       },
       // {
       //   img: "",
@@ -422,6 +429,11 @@ export const projectsData = [
         title: "",
         description: "",
       },
+      {
+        img: IdUNILAGDesign6,
+        title: "",
+        description: "",
+      },
     ],
     testing: [],
     challengeAndLessonsText: "",
@@ -436,6 +448,80 @@ export const projectsData = [
     style: "border-t border-[#3C414B]",
     tag: [],
     disabled: true,
+    heroImg: TidePayHero,
+    firstMedia: IdUNILAGirstMedia,
+    overview: [],
+    why: [
+      "As someone who attended a public university in Nigeria, I’ve experienced first hand how a regular student goes through a bunch of avoidable stress trying to manually complete processes that ideally, can be automated. The School ID collection is one out of many that needs a total overhaul of its process.",
+      "UNILAG, being one of the largest federal universities in Nigeria with a large population of students, having to manually issue IDs to its students is not only time-consuming but also costly, as it requires a significant investment in personnel and infrastructure, hence the need for a platform like ID_UNILAG.",
+      "By adopting an online platform, UNILAG can improve efficiency, reduce costs, enhance security, and provide convenience for both students and administrators. An online platform would enable students to create and manage their ID cards remotely, reducing the need for physical visits . At the same time, administrators can manage the process more efficiently, with all data stored in a centralized database, allowing for easy access and management.",
+    ],
+    examplesText: "",
+    examples: [],
+    what: [
+      "ID-UNILAG is an online platform designed to create and manage student ID cards for UNILAG, one of the largest federal universities in Nigeria. The platform's primary aim is to eradicate the traditional method of physical processing, which can be time-consuming, inefficient, and costly.",
+      "With ID-UNILAG, students can create and manage their ID cards remotely, eliminating the need for physical visits to the university. The platform is user-friendly and accessible, allowing students to easily navigate the interface and create their ID cards in a matter of minutes. The platform also ensures that all data is accurate and up-to-date, with all student information stored in a centralized database.",
+      "The platform is also designed to enhance security by preventing fraudulent activities, such as the creation of fake ID cards. ID-UNILAG uses advanced security measures, including facial verification, to ensure that all ID cards are authentic and cannot be tampered with. The platform is scalable, allowing the university to process large volumes of ID cards efficiently and cost-effectively.",
+    ],
+    myContribution: ["Product Strategy", "User Research", "UX/UI Design"],
+    team: ["1 Product Designer (Me)", "1 Software Engineer"],
+    research: [
+      "Although having experienced the inconvenience associated with this process, we needed validation of our hypothesis. This was to enable us gain more insight into the needs and preferences of our target audience and also, so we could build a more solid case for our proposal. The research process involved conducting interviews with students and administrators to understand their experiences with the traditional method of physical processing of ID cards and to identify their pain points.  It also involved studying similar platforms offering biometric verification to get a better understanding on how we could bring ours to live.",
+      "From my research findings, I discovered that students and administrators found the physical processing of ID cards to be time-consuming and frustrating. Some of the pain points identified included long queues, delays in processing, and the need to provide physical copies of documents. Students also expressed a preference for a platform that was easy to use and accessible from anywhere.",
+    ],
+    questionsText: "",
+    questionsAsked: [],
+    primaryResearch: [],
+    secondaryResearch: [],
+    additionalResearch: "",
+    definingtext:
+      "With clear set out goals to propose the need for a digital ID creation platform, we dived into outlining key features to be accommodated.",
+    productOfferings: [
+      "ID creation for new students",
+      "ID management for returning students",
+      "Stolen IDs",
+      "Admin / Management",
+    ],
+    execution:
+      "For a platform to be used by students and administrators, I had to ensure the design was easy to use and navigate. So to kick that off, i put up a user flow, containing all components of the web app laid out in hierarchy",
+    executionImg: hangExecutionImg,
+    design: [
+      {
+        img: IdUNILAGDesign1,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign2,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign3,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign4,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign5,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign6,
+        title: "",
+        description: "",
+      },
+    ],
+    testing: [],
+    challengeAndLessonsText: "",
+    challenges: [],
+    outcome:
+      "After our proposal presentation for ID-UNILAG, the departmental management has approved the project for implementation. The proposal will now be presented to the senate for final approval. If approved, ID-UNILAG will be developed and implemented for use by the university, providing a user-friendly, efficient, and secure platform for student ID card processing. The implementation of ID-UNILAG is expected to improve the overall experience for both students and administrators and streamline the ID card creation process, saving time and reducing the burden of physical processing.",
   },
   {
     name: "SoliMax",
@@ -444,5 +530,79 @@ export const projectsData = [
     style: "border-y border-[#3C414B]",
     tag: [],
     disabled: true,
+    heroImg: SoliMaxHero,
+    firstMedia: IdUNILAGirstMedia,
+    overview: [],
+    why: [
+      "As someone who attended a public university in Nigeria, I’ve experienced first hand how a regular student goes through a bunch of avoidable stress trying to manually complete processes that ideally, can be automated. The School ID collection is one out of many that needs a total overhaul of its process.",
+      "UNILAG, being one of the largest federal universities in Nigeria with a large population of students, having to manually issue IDs to its students is not only time-consuming but also costly, as it requires a significant investment in personnel and infrastructure, hence the need for a platform like ID_UNILAG.",
+      "By adopting an online platform, UNILAG can improve efficiency, reduce costs, enhance security, and provide convenience for both students and administrators. An online platform would enable students to create and manage their ID cards remotely, reducing the need for physical visits . At the same time, administrators can manage the process more efficiently, with all data stored in a centralized database, allowing for easy access and management.",
+    ],
+    examplesText: "",
+    examples: [],
+    what: [
+      "ID-UNILAG is an online platform designed to create and manage student ID cards for UNILAG, one of the largest federal universities in Nigeria. The platform's primary aim is to eradicate the traditional method of physical processing, which can be time-consuming, inefficient, and costly.",
+      "With ID-UNILAG, students can create and manage their ID cards remotely, eliminating the need for physical visits to the university. The platform is user-friendly and accessible, allowing students to easily navigate the interface and create their ID cards in a matter of minutes. The platform also ensures that all data is accurate and up-to-date, with all student information stored in a centralized database.",
+      "The platform is also designed to enhance security by preventing fraudulent activities, such as the creation of fake ID cards. ID-UNILAG uses advanced security measures, including facial verification, to ensure that all ID cards are authentic and cannot be tampered with. The platform is scalable, allowing the university to process large volumes of ID cards efficiently and cost-effectively.",
+    ],
+    myContribution: ["Product Strategy", "User Research", "UX/UI Design"],
+    team: ["1 Product Designer (Me)", "1 Software Engineer"],
+    research: [
+      "Although having experienced the inconvenience associated with this process, we needed validation of our hypothesis. This was to enable us gain more insight into the needs and preferences of our target audience and also, so we could build a more solid case for our proposal. The research process involved conducting interviews with students and administrators to understand their experiences with the traditional method of physical processing of ID cards and to identify their pain points.  It also involved studying similar platforms offering biometric verification to get a better understanding on how we could bring ours to live.",
+      "From my research findings, I discovered that students and administrators found the physical processing of ID cards to be time-consuming and frustrating. Some of the pain points identified included long queues, delays in processing, and the need to provide physical copies of documents. Students also expressed a preference for a platform that was easy to use and accessible from anywhere.",
+    ],
+    questionsText: "",
+    questionsAsked: [],
+    primaryResearch: [],
+    secondaryResearch: [],
+    additionalResearch: "",
+    definingtext:
+      "With clear set out goals to propose the need for a digital ID creation platform, we dived into outlining key features to be accommodated.",
+    productOfferings: [
+      "ID creation for new students",
+      "ID management for returning students",
+      "Stolen IDs",
+      "Admin / Management",
+    ],
+    execution:
+      "For a platform to be used by students and administrators, I had to ensure the design was easy to use and navigate. So to kick that off, i put up a user flow, containing all components of the web app laid out in hierarchy",
+    executionImg: hangExecutionImg,
+    design: [
+      {
+        img: IdUNILAGDesign1,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign2,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign3,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign4,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign5,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign6,
+        title: "",
+        description: "",
+      },
+    ],
+    testing: [],
+    challengeAndLessonsText: "",
+    challenges: [],
+    outcome:
+      "After our proposal presentation for ID-UNILAG, the departmental management has approved the project for implementation. The proposal will now be presented to the senate for final approval. If approved, ID-UNILAG will be developed and implemented for use by the university, providing a user-friendly, efficient, and secure platform for student ID card processing. The implementation of ID-UNILAG is expected to improve the overall experience for both students and administrators and streamline the ID card creation process, saving time and reducing the burden of physical processing.",
   },
 ];
