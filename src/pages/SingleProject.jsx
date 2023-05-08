@@ -27,12 +27,12 @@ export default function SingleProject() {
   const container = useRef(null);
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(".container", {
-        duration: 4,
-        // skewX: 10,
-        // x: -100,
-        opacity: 0,
-      });
+      // gsap.from(".wrapper", {
+      //   duration: 4,
+      //   // skewX: 10,
+      //   // x: -100,
+      //   opacity: 0,
+      // });
       gsap.from(".hero-item", {
         stagger: {
           amount: 0.4,
@@ -40,34 +40,20 @@ export default function SingleProject() {
         ease: Power3.easeIn,
         opacity: 0,
       });
-      gsap.from(".hero-img", {
-        x: -100,
-        duration: 4,
-      });
+      // gsap.from(".hero-img", {
+      //   x: -100,
+      //   duration: 4,
+      // });
       gsap.from(".text", {
         y: -100,
         duration: 2,
       });
-      gsap.from(".pText", {
-        x: 100,
-        duration: 5,
-      });
+      // gsap.from(".pText", {
+      //   x: 100,
+      //   duration: 5,
+      // });
     }, container);
     return () => ctx.revert();
-
-    // tl.from(".card_2", { yPercent: 100 })
-    //   .from(".card_3", { xPercent: -100 })
-    //   .from(".card_4", { yPercent: 100 });
-    // ScrollTrigger.create({
-    //   animation: tl,
-    //   trigger: "#card_container",
-    //   start: "top top",
-    //   // end: "+=4000",
-    //   scrub: true,
-    //   pin: true,
-    //   markers: true,
-    //   anticipatePin: 1,
-    // });
   }, []);
 
   useEffect(() => {
@@ -79,12 +65,12 @@ export default function SingleProject() {
 
       <main className="text-white ">
         <div className="bg-[#111111] hero-item text pt-16 md:pt-20">
-            <img
+          <img
             onClick={redirect}
-              className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-28 md:w-40 pb-16 md:pb-20 lg:w-28"
-              src={arrowLeftCircle}
-              alt="arrow left"
-            />
+            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 md:w-40 pb-16 md:pb-20 lg:w-28"
+            src={arrowLeftCircle}
+            alt="arrow left"
+          />
           <section className="px-8 sm:px-14 xl:px-[100px]">
             <div className="flex items-center gap-2">
               {project?.tag?.map((tag, index) => (
@@ -194,7 +180,7 @@ export default function SingleProject() {
             )}
             {project?.whatImg && (
               <img
-                className="w-full mt-12 mb-[100px]"
+                className="w-full mt-12 lg:mb-[100px]"
                 src={project?.whatImg}
                 alt="overview img"
               />
@@ -203,7 +189,7 @@ export default function SingleProject() {
             <div className="h-72 w-full mt-12 mb-[100px] bg-slate-200"></div>
           )} */}
 
-            <div className="py-[74px] flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
+            <div className="pt-[74px] lg:py-[74px] flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
               {project?.myContribution && (
                 <div className="flex flex-col gap-4">
                   <h4 className="tracking-[-0.01em] font-semibold text-xl md:text-2xl">
@@ -243,7 +229,7 @@ export default function SingleProject() {
             </div>
           </section>
           {/* The process */}
-          <section className="bg-white text-black pt-16 pb-[100px] px-8 sm:px-14 xl:px-[100px]">
+          <section className="bg-white text-black pt-16 pb-12 md::pb-[100px] px-8 sm:px-14 xl:px-[100px]">
             <h2 className="font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
               The <span className="text-[#5D5FEF]">Process</span>
             </h2>
@@ -293,6 +279,7 @@ export default function SingleProject() {
               </div>
             )}
           </section>
+          {/* defining */}
           <section className="bg-white pb-[82px] text-black px-8 sm:px-14 xl:px-[100px]">
             <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               {project?.name === "OfficeHR"
@@ -341,7 +328,7 @@ export default function SingleProject() {
               {project?.name === "ID-UNILAG" ? "Designs" : "The Design"}
             </h2>
 
-            <div className="flex flex-col gap-[100px]">
+            <div className="flex flex-col md:gap-[100px]">
               {project?.design?.map((design, index) => (
                 <div key={index} className="mt-8">
                   {!project?.name === "ID-UNILAG" && (

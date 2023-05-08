@@ -47,7 +47,7 @@ export function Navbar() {
         <Link to="/" className="logo">
           <img
             className={`z-[99999] nav_item ${
-              menuOpen && `absolute md:relative`
+              menuOpen && `absolute top-6 lg:top-[52px] md:relative`
             }`}
             src={logo}
             alt="logo"
@@ -63,24 +63,24 @@ export function Navbar() {
         } absolute top-0 bg-[#111111] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
         <ul className="list-none flex mt-[50%] lg:mt-0 flex-col items-center gap-9 lg:flex-row">
-          <NavHashLink
+          <HashLink
             to="/#myWorks"
             className="nav_item lg:text-2xl hover:font-bold"
           >
             WORK
-          </NavHashLink>
-          <NavHashLink
+          </HashLink>
+          <HashLink
             to="/#about"
             className="nav_item lg:text-2xl hover:font-bold"
           >
             ABOUT
-          </NavHashLink>
-          <NavHashLink
+          </HashLink>
+          <HashLink
             to="/#contact"
             className="nav_item lg:text-2xl hover:font-bold"
           >
             CONTACT
-          </NavHashLink>
+          </HashLink>
           <button className="">
             <a
               href="https://drive.google.com/file/d/1JofDXbneOPnXA_CZ3wPilAO6pHRz7-h6/view?usp=sharing "
