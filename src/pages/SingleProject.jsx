@@ -101,7 +101,7 @@ export default function SingleProject() {
             </div>
           )}
           {project?.name !== "Gifta" && project?.firstMedia && (
-            <video autoPlay src={project?.firstMedia} alt="project preview" />
+            <video autoPlay loop src={project?.firstMedia} alt="project preview" />
           )}
           {project?.overviewImg && (
             <img src={project?.overviewImg} alt="project preview" />
@@ -120,6 +120,7 @@ export default function SingleProject() {
             <video
               className="mt-[30px] mb-[75px]"
               autoPlay
+loop
               src={project?.firstMedia}
               alt="project preview"
             />
@@ -284,7 +285,7 @@ export default function SingleProject() {
                   {design?.description}
                 </p>
                 {design?.video && (
-                  <video autoPlay src={design?.video} alt="project preview" />
+                  <video loop autoPlay src={design?.video} alt="project preview" />
                 )}
                 {design?.img && <img src={design?.img} alt="project preview" />}
                 {/* {!design?.video && (
