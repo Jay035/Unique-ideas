@@ -5,7 +5,7 @@ import { projectsData } from "../data/data";
 import Transition from "../components/Transition";
 import { useRef } from "react";
 import { useEffect } from "react";
-import { gsap } from "gsap";
+import { Power3, gsap } from "gsap";
 import { useState } from "react";
 
 export default function Projects() {
@@ -29,13 +29,14 @@ export default function Projects() {
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.from(".skewLeft", {
-        duration: 1,
+        delay: 1.2,
         skewY: -10,
         x: -100,
         opacity: 0,
+        ease: Power3
       });
       gsap.from(".skewRight", {
-        duration: 1,
+        delay: .2,
         skewY: -10,
         x: 100,
         opacity: 0,

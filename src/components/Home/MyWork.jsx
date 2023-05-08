@@ -9,7 +9,7 @@ export default function MyWork() {
   };
 
   return (
-    <section className="mb-[140px] pt-5" id="myWorks">
+    <section className="mb-[140px] pt-5 w-full" id="myWorks">
       <h2 className="tracking-[-0.03em] px-8 sm:px-14 xl:px-20 text-3xl md:text-5xl">
         MY WORK
       </h2>
@@ -18,10 +18,10 @@ export default function MyWork() {
           <div
             key={index}
             onClick={() => showProjectDetails(project?.name)}
-            className="mb-12 w-full mt-11 relative"
+            className="cursor-pointer mb-12 w-full mt-11 relative"
           >
             <img
-              className="w-full xl:min-w-[1600px] xl:max-h-[90vh] object-cover object-center"
+              className="w-full xl:min-h-[90vh] object-cover object-center"
               src={project?.heroImg}
               alt=""
             />

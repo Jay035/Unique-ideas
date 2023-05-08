@@ -21,6 +21,10 @@
   src: url("/fonts/NeueHaasDisplayRoman.ttf");
 }
 
+/* *{
+  border: 1px solid salmon;
+} */
+
 section > * {
   overflow: hidden;
 }

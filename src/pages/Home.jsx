@@ -18,7 +18,7 @@ export default function Home() {
   const container = useRef(null);
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(".container", {
+      gsap.from(".wrapper", {
         duration: 4,
         // skewX: 10,
         // x: -100,
@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <div ref={container}>
       <Transition />
-      <main className="container text-white bg-[#111111]">
+      <main className="wrapper text-white bg-[#111111] w-full">
         <HeroSection />
         <MyWork />
         <AboutMe />
