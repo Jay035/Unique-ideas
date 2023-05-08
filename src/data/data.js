@@ -274,7 +274,7 @@ export const projectsData = [
     year: "2022",
     yearColor: "#5D5FEF",
     style: "border-t border-[#3C414B]",
-    tag: [],
+    tag: ["Social Capital"],
     disabled: false,
     heroImg: giftaHero,
     firstMedia: GiftaFirstMedia,

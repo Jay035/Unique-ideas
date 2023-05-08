@@ -35,7 +35,7 @@ export default function SingleProject() {
         </Link>
         <section className="px-8 sm:px-14 xl:px-[100px]">
           <div className="flex items-center gap-2">
-            {project?.tags?.map((tag, index) => (
+            {project?.tag?.map((tag, index) => (
               <span
                 key={index}
                 className="border rounded-[30px] px-4 py-2 lg:py-3 md:text-xl 2xl:text-2xl tracking-[-0.03em]"
