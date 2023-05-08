@@ -91,7 +91,14 @@ import giftaVideo1 from "../assets/Gifta/Create list.mp4";
 import giftaVideo2 from "../assets/Gifta/Create organization.mp4";
 import giftaVideo3 from "../assets/Gifta/payments.mp4";
 import GiftaFirstMedia from "../assets/first media/Gifta.mp4";
+import IdUNILAGHero from "../assets/ID_UNILAG_Hero.png";
 import IdUNILAGirstMedia from "../assets/first media/Unilag ID.mp4";
+import IdUNILAGDesign1 from "../assets/ID_UNILAG_Design1.png";
+import IdUNILAGDesign2 from "../assets/ID_UNILAG_Design2.png";
+import IdUNILAGDesign3 from "../assets/ID_UNILAG_Design3.png";
+import IdUNILAGDesign4 from "../assets/ID_UNILAG_Design4.png";
+import IdUNILAGDesign5 from "../assets/ID_UNILAG_Design5.png";
+import IdUNILAGDesign6 from "../assets/ID_UNILAG_Design6.png";
 
 export const projectsData = [
   // officeHR
@@ -108,7 +115,7 @@ export const projectsData = [
     overviewImg: "",
     firstMedia: OfficeHRfirstMedia,
     why: [
-      "When i was approached to be a member of the team to create OfficeHR, I was delighted by the idea on what it is to be about. Having experienced working in start-ups, I could relate to how difficult carrying out HR processes was to the management. From hiring, onboarding, team management down to payments was astruggle. To these firms especially SMEs, it led to a lack of organization, time consuming in administrative tasks and even difficulty in tracking employee information and performance.",
+      "When i was approached to be a member of the team to create OfficeHR, I was delighted by the idea on what it is to be about. Having experienced working in start-ups, I could relate to how difficult carrying out HR processes was to the management. From hiring, onboarding, team management down to payments was a struggle. To these firms especially SMEs, it led to a lack of organization, time consuming in administrative tasks and even difficulty in tracking employee information and performance.",
       "A migraine existed that needed to be attended to, We needed to create a solution, one that will help businesses, especially SMEs take care of their team while accommodating their pocket sizes. The solution is OfficeHR, an efficient and user friendly HRMS solution that caters to all the core HR processes, helping organizations better streamline their HR operations.",
     ],
     examplesText: "",
@@ -184,7 +191,7 @@ export const projectsData = [
   },
   // Hang
   {
-    name: "Hang",
+    name: "Hang App",
     proposal: false,
     year: "2023",
     yearColor: "#9CFF8F",
@@ -352,7 +359,7 @@ export const projectsData = [
     style: "border-t border-[#3C414B]",
     tag: ["DigitalID", "Security"],
     disabled: false,
-    heroImg: hangHeroImg,
+    heroImg: IdUNILAGHero,
     firstMedia: IdUNILAGirstMedia,
     overview: [],
     why: [
@@ -360,7 +367,7 @@ export const projectsData = [
       "UNILAG, being one of the largest federal universities in Nigeria with a large population of students, having to manually issue IDs to its students is not only time-consuming but also costly, as it requires a significant investment in personnel and infrastructure, hence the need for a platform like ID_UNILAG.",
       "By adopting an online platform, UNILAG can improve efficiency, reduce costs, enhance security, and provide convenience for both students and administrators. An online platform would enable students to create and manage their ID cards remotely, reducing the need for physical visits . At the same time, administrators can manage the process more efficiently, with all data stored in a centralized database, allowing for easy access and management.",
     ],
-    examplesText: "Here are a few examples",
+    examplesText: "",
     examples: [],
     what: [
       "ID-UNILAG is an online platform designed to create and manage student ID cards for UNILAG, one of the largest federal universities in Nigeria. The platform's primary aim is to eradicate the traditional method of physical processing, which can be time-consuming, inefficient, and costly.",
@@ -391,27 +398,32 @@ export const projectsData = [
     executionImg: hangExecutionImg,
     design: [
       {
-        video: giftaVideo1,
+        img: IdUNILAGDesign1,
         title: "",
         description: "",
       },
       {
-        video: giftaVideo2,
+        img: IdUNILAGDesign2,
         title: "",
         description: "",
       },
       {
-        video: giftaVideo3,
+        img: IdUNILAGDesign3,
         title: "",
         description: "",
       },
       {
-        img: giftaDesign1,
+        img: IdUNILAGDesign4,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign5,
         title: "",
         description: "",
       },
     ],
-    testing: [""],
+    testing: [],
     challengeAndLessonsText: "",
     challenges: [],
     outcome:

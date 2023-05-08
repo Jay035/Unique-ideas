@@ -14,7 +14,7 @@ export default function Footer() {
       </h1>
       <section className="flex md:items-center justify-between">
         <a
-          href="mailto:"
+          href="mailto:Uniqueideas85@gmail.com"
           className="bg-[#9CFF8F] rounded-[30px] w-fit flex items-center gap-[10px] py-2 md:py-3 px-4"
         >
           Send me an email <img src={arrowUpRight} alt="arrow right" />

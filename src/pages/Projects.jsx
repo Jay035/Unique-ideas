@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import arrowRight from "../assets/arrow-right-circle.svg";
+import officeHR from "../assets/officeHR.png";
 import { projectsData } from "../data/data";
 import Transition from "../components/Transition";
 import { useRef } from "react";
@@ -9,6 +10,7 @@ import { gsap } from "gsap";
 export default function Projects() {
   const navigate = useNavigate();
   const container = useRef(null);
+  // const [projectImg, ]
   const showProjectDetails = (name, disabled) => {
     if (!disabled) {
       console.log(disabled);
@@ -18,7 +20,7 @@ export default function Projects() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(".container", {
+      gsap.from(".wrapper", {
         duration: 1,
         skewX: 10,
         x: -100,
@@ -31,9 +33,9 @@ export default function Projects() {
   return (
     <div ref={container}>
       <Transition />
-      <div className="container bg-[#111111] px-8 sm:px-14 xl:px-[100px] pb-[101px] mt-12">
-        <section className="flex justify-between items-end mb-[120px]">
-          <h1 className="hero-item text text-4xl md:text-6xl lg:text-7xl xl:text-[120px] tracking-[-0.03em] text-white">
+      <div className="wrapper bg-[#111111] w-full px-8 sm:px-14 xl:px-[100px] pb-[101px] mt-12">
+        <section className="flex justify-between items-center w-full mb-[120px]">
+          <h1 className="w-full hero-item text text-4xl md:text-6xl lg:text-7xl xl:text-[120px] tracking-[-0.03em] text-white">
             RECENT <br /> PROJECTS
           </h1>
           <img
@@ -42,7 +44,7 @@ export default function Projects() {
             alt="arrow right"
           />
         </section>
-        <section className="grid lg:grid-cols-2">
+        <section className="grid lg:grid-cols-2 w-full">
           <div className="text-white flex flex-col">
             {projectsData?.map((project, index) => (
               <div
@@ -58,10 +60,17 @@ export default function Projects() {
                   {project?.year}
                 </p>
                 <h2 className="text-3xl lg:text-[60px]">{project?.name}</h2>
+                {project?.disabled && (
+                  <p className="text-[#DF99F7] py-2 md:py-3 px-4 rounded-[30px] border border-[#DF99F7]">
+                    Coming soon
+                  </p>
+                )}
               </div>
             ))}
           </div>
-          <div className="hidden lg:flex bg-[#D9D9D9] mt-20 lg:mt-0 w-full lg:min-w-[640px] h-96 lg:h-[798px]"></div>
+          <div className="hidden lg:flex mt-20 lg:mt-0 w-full lg:min-w-[640px] ">
+            <img className="object-[40%] px-4 object-cover w-full" src={officeHR} alt="" />
+          </div>
         </section>
       </div>
     </div>

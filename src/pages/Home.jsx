@@ -14,8 +14,8 @@ import { Power3 } from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const container = useRef(null);
   // const tl = gsap.timeline();
+  const container = useRef(null);
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.from(".container", {
