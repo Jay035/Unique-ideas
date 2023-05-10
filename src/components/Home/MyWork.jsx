@@ -122,7 +122,7 @@ export default function MyWork() {
       </div>
       <Link
         to="/projects"
-        className="mt-[760px] md:mt-[820px] w-full max-w-[180px] text-center tracking-[-0.03em] rounded-[30px] md:text-xl flex justify-center items-center mx-auto border py-3 px-4"
+        className="mt-[790px] md:mt-[820px] w-full max-w-[180px] text-center tracking-[-0.03em] rounded-[30px] md:text-xl flex justify-center items-center mx-auto border py-3 px-4"
       >
         SEE ALL WORKS
       </Link>

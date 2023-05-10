@@ -67,7 +67,7 @@ export default function SingleProject() {
         <div className="bg-[#111111] hero-item text pt-16 md:pt-20">
           <img
             onClick={redirect}
-            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 md:w-20 pb-16 md:pb-20 "
+            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 pb-16 md:pb-20 "
             src={arrowLeftCircle}
             alt="arrow left"
           />
@@ -405,13 +405,13 @@ export default function SingleProject() {
             </section>
           )}
           {/* Challenges and Lessons */}
-          <section className="bg-white pb-[82px px-8 sm:px-14 xl:px-[100px]">
+          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
             {project?.challengeAndLessonsText && (
               <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Challenges and Lessons
               </h2>
             )}
-            {(!project?.challengeAndLessonsText || !project?.outcome) && (
+            {(!project?.challengeAndLessonsText || project?.outcome) && (
               <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Outcome
               </h2>
