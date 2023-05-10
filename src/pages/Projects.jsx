@@ -20,7 +20,7 @@ export default function Projects() {
   };
 
   const toggleImage = (project) => {
-    setProjectImg(project?.heroImg);
+    setProjectImg(project?.heroImgMobile);
     gsap.to(".project-img", {
       ease: Power3.easeIn
     });

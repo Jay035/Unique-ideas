@@ -67,7 +67,7 @@ export default function SingleProject() {
         <div className="bg-[#111111] hero-item text pt-16 md:pt-20">
           <img
             onClick={redirect}
-            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 md:w-40 pb-16 md:pb-20 "
+            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 md:w-20 pb-16 md:pb-20 "
             src={arrowLeftCircle}
             alt="arrow left"
           />
