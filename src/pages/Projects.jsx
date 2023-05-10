@@ -37,7 +37,7 @@ export default function Projects() {
       });
       gsap.from(".skewRight", {
         delay: .2,
-        skewY: -10,
+        skewY: 10,
         x: 100,
         opacity: 0,
       });

@@ -236,11 +236,11 @@ export default function SingleProject() {
             </div>
           </section>
           {/* scope of work */}
-          <section className="px-8 sm:px-14 xl:px-[100px]">
+          {/* <section className="px-8 sm:px-14 xl:px-[100px]">
           <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
               The <span className="text-[#5D5FEF]">Process</span>
             </h2>
-          </section>
+          </section> */}
           {/* The process */}
           <section className="pt-16 pb-12 md::pb-[100px] px-8 sm:px-14 xl:px-[100px]">
             <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
