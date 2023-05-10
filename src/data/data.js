@@ -67,6 +67,7 @@ export const SkillsData = [
 ];
 // OfficeHR
 import officeHrHeroImg from "../assets/officeHR.png";
+import officeHrHeroImgMobile from "../assets/officeHR_mobile.png";
 import officeHrExecutionImg from "../assets/officeHR-execution.png";
 import OfficeHRfirstMedia from "../assets/first media/HRMS.mp4";
 import OfficeHRDesignVideo1 from "../assets/hrms/Hiring and Onboarding.mp4";
@@ -123,7 +124,7 @@ export const projectsData = [
     tag: ["HR", "People Management"],
     disabled: false,
     heroImg: officeHrHeroImg,
-    heroImgMobile: officeHrHeroImg,
+    heroImgMobile: officeHrHeroImgMobile,
     overview: "",
     overviewImg: "",
     firstMedia: OfficeHRfirstMedia,

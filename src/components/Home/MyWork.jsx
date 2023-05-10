@@ -98,7 +98,7 @@ export default function MyWork() {
               alt="work img"
             />
             <img
-              className="lg:hidden w-full h-screen max-h-screen object-cover"
+              className="lg:hidden w-full h-screen max-h-screen object-cover object-center"
               src={project?.heroImgMobile}
               alt="work img"
             />
