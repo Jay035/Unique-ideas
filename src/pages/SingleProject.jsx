@@ -33,21 +33,21 @@ export default function SingleProject() {
       //   // x: -100,
       //   opacity: 0,
       // });
-      gsap.from(".hero-item", {
-        stagger: {
-          amount: 0.4,
-        },
-        ease: Power3.easeIn,
-        opacity: 0,
-      });
+      // gsap.from(".hero-item", {
+      //   stagger: {
+      //     amount: 0.4,
+      //   },
+      //   ease: Power3.easeIn,
+      //   opacity: 0,
+      // });
       // gsap.from(".hero-img", {
       //   x: -100,
       //   duration: 4,
       // });
-      gsap.from(".text", {
-        y: -100,
-        duration: 2,
-      });
+      // gsap.from(".text", {
+      //   y: -100,
+      //   duration: 2,
+      // });
       // gsap.from(".pText", {
       //   x: 100,
       //   duration: 5,
@@ -100,13 +100,15 @@ export default function SingleProject() {
             </h1>
           </section>
         </div>
+
         <section className="w-full bg-[#111111]">
           <img className="w-full" src={project?.heroImg} alt="" />
         </section>
-        <div className="bg-white">
-          <section className="px-8 sm:px-14 xl:px-[100px] text-black py-[100px] bg-white">
+
+        <div className="bg-white text-[#344054] pb-10">
+          <section className="px-8 sm:px-14 xl:px-[100px]  py-[100px] bg-white">
             <div className="grid lg:grid-cols-2 gap-6 lg:gap-0 lg:justify-between mb-[100px]">
-              <h2 className="font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
+              <h2 className="text-black font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
                 {project?.overview && "Overview"}
                 {!project?.overview && (
                   <p>
@@ -117,7 +119,7 @@ export default function SingleProject() {
                   </p>
                 )}
               </h2>
-              <div className="text-[#344054] font-onest flex flex-col gap-4 md:text-xl lg:text-2xl">
+              <div className="font-onest flex flex-col gap-4 md:text-xl lg:text-2xl">
                 {project?.why &&
                   project?.why?.map((item, index) => (
                     <p key={index} className="tracking-[-0.03em]">
@@ -130,11 +132,9 @@ export default function SingleProject() {
                       {item}
                     </p>
                   ))}
-                <p className="tracking-[-0.03em]">
-                  {project?.additionalResearch}
-                </p>
               </div>
             </div>
+
             {project?.examples?.length > 0 && (
               <div className="">
                 <p className="flex items-center gap-2 md:text-xl lg:text-2xl">
@@ -167,12 +167,12 @@ export default function SingleProject() {
             {/* <div className="h-72 w-full bg-slate-200"></div> */}
           </section>
           {/* WHAT IS ? */}
-          <section className="px-8 sm:px-14 xl:px-[100px] bg-white text-black">
-            <h2 className="font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
+          <section className="px-8 sm:px-14 xl:px-[100px] bg-white">
+            <h2 className="text-black font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
               What is <span className="text-[#5D5FEF]">{project?.name} ?</span>
             </h2>
             {project?.what?.map((item, index) => (
-              <p className="mt-6 text-[#344054] md:text-xl lg:text-2xl">
+              <p key={index} className="mt-6  md:text-xl lg:text-2xl">
                 {item}
               </p>
             ))}
@@ -199,10 +199,10 @@ export default function SingleProject() {
             <div className="pt-[74px] lg:py-[74px] flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
               {project?.myContribution && (
                 <div className="flex flex-col gap-4">
-                  <h4 className="tracking-[-0.01em] font-semibold text-xl md:text-2xl">
+                  <h4 className="text-black tracking-[-0.01em] font-semibold text-xl md:text-2xl">
                     My Contribution
                   </h4>
-                  <ul className="list-disc text-[#344054] md:text-xl lg:text-2xl ml-6">
+                  <ul className="list-disc md:text-xl lg:text-2xl ml-6">
                     {project?.myContribution?.map((item, index) => (
                       <li key={index} className="">
                         {item}
@@ -213,10 +213,10 @@ export default function SingleProject() {
               )}
               {project?.team && (
                 <div className="flex flex-col gap-4">
-                  <h4 className="tracking-[-0.01em] font-semibold text-xl md:text-2xl">
+                  <h4 className="text-black tracking-[-0.01em] font-semibold text-xl md:text-2xl">
                     The team
                   </h4>
-                  <ul className="list-disc text-[#344054] md:text-xl lg:text-2xl ml-6">
+                  <ul className="list-disc md:text-xl lg:text-2xl ml-6">
                     {project?.team?.map((item, index) => (
                       <li className="">{item}</li>
                     ))}
@@ -225,10 +225,10 @@ export default function SingleProject() {
               )}
               {project?.year && (
                 <div className="flex flex-col gap-4">
-                  <h4 className="tracking-[-0.01em] font-semibold text-xl md:text-2xl">
+                  <h4 className="text-black tracking-[-0.01em] font-semibold text-xl md:text-2xl">
                     Year
                   </h4>
-                  <ul className="list-disc text-[#344054] md:text-xl lg:text-2xl ml-6">
+                  <ul className="list-disc md:text-xl lg:text-2xl ml-6">
                     <li className="">{project?.year}</li>
                   </ul>
                 </div>
@@ -236,18 +236,18 @@ export default function SingleProject() {
             </div>
           </section>
           {/* The process */}
-          <section className="bg-white text-black pt-16 pb-12 md::pb-[100px] px-8 sm:px-14 xl:px-[100px]">
-            <h2 className="font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
+          <section className="bg-white pt-16 pb-12 md::pb-[100px] px-8 sm:px-14 xl:px-[100px]">
+            <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
               The <span className="text-[#5D5FEF]">Process</span>
             </h2>
             {/* primary research */}
             <div className="flex flex-col gap-4 pb-8">
               {project?.primaryResearch?.length > 0 ? (
-                <h3 className="text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
+                <h3 className="text-black text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
                   Primary research
                 </h3>
               ) : (
-                <h3 className="text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
+                <h3 className="text-black text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
                   Research
                 </h3>
               )}
@@ -255,7 +255,7 @@ export default function SingleProject() {
                 ? project?.primaryResearch?.map((item, index) => (
                     <p
                       key={index}
-                      className="font-onest text-[#344054] md:text-xl lg:text-2xl tracking-[-0.03em]"
+                      className="font-onest md:text-xl lg:text-2xl tracking-[-0.03em]"
                     >
                       {item}
                     </p>
@@ -263,22 +263,35 @@ export default function SingleProject() {
                 : project?.research?.map((item, index) => (
                     <p
                       key={index}
-                      className="font-onest text-[#344054] md:text-xl lg:text-2xl tracking-[-0.03em]"
+                      className="font-onest md:text-xl lg:text-2xl tracking-[-0.03em]"
                     >
                       {item}
                     </p>
                   ))}
+
+              <div className="font-onest">
+                <p>{project?.questionsText}</p>
+                <ul className="list-disc ml-6 flex flex-col gap-3 mt-3">
+                  {project?.questionsAsked?.length > 0 &&
+                    project?.questionsAsked?.map((question, index) => (
+                      <li key={index}>{question}</li>
+                    ))}
+                </ul>
+              </div>
+              <p className="tracking-[-0.03em] font-onest">
+                {project?.additionalResearch}
+              </p>
             </div>
             {/* secondary research */}
             {project?.secondaryResearch?.length > 0 && (
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
+                <h3 className="text-black text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
                   Secondary research
                 </h3>
                 {project?.secondaryResearch?.map((item, index) => (
                   <p
                     key={index}
-                    className="font-onest text-[#344054] md:text-xl lg:text-2xl tracking-[-0.03em]"
+                    className="font-onest md:text-xl lg:text-2xl tracking-[-0.03em]"
                   >
                     {item}
                   </p>
@@ -287,8 +300,8 @@ export default function SingleProject() {
             )}
           </section>
           {/* defining */}
-          <section className="bg-white pb-[82px] text-black px-8 sm:px-14 xl:px-[100px]">
-            <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
+          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+            <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               {project?.name === "OfficeHR"
                 ? "Defining our Product Offering"
                 : "Defining features"}
@@ -312,8 +325,8 @@ export default function SingleProject() {
             </div>
           </section>
           {/* The execution */}
-          <section className="bg-white pb-[82px] text-black px-8 sm:px-14 xl:px-[100px]">
-            <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
+          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+            <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               The Execution
             </h2>
             <p className="md:text-xl lg:text-2xl my-8 font-onest tracking-[-0.03em]">
@@ -325,13 +338,13 @@ export default function SingleProject() {
                 alt="project execution preview"
               />
             )}
-            {!project?.executionImg && (
+            {/* {!project?.executionImg && (
               <div className="bg-slate-300 h-[82px] w-full"></div>
-            )}
+            )} */}
           </section>
           {/* The design */}
-          <section className="bg-white pb-[82px] text-black px-8 sm:px-14 xl:px-[100px]">
-            <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
+          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+            <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               {project?.name === "ID-UNILAG" ? "Designs" : "The Design"}
             </h2>
 
@@ -339,7 +352,7 @@ export default function SingleProject() {
               {project?.design?.map((design, index) => (
                 <div key={index} className="mt-8">
                   {design?.title && (
-                    <h3 className="flex items-center gap-4 font-semibold text-xl md:text-2xl lg:text-[32px]">
+                    <h3 className="text-black flex items-center gap-4 font-semibold text-xl md:text-2xl lg:text-[32px]">
                       <img
                         className="-mt-1 w-4 md:w-5 lg:w-6"
                         src={arrowDouble}
@@ -371,8 +384,8 @@ export default function SingleProject() {
           </section>
           {/* Testing */}
           {project?.testing?.length > 0 && (
-            <section className="bg-white pb-[82px] text-black px-8 sm:px-14 xl:px-[100px]">
-              <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
+            <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+              <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Testing
               </h2>
               {project?.testing?.map((test, index) => (
@@ -386,14 +399,14 @@ export default function SingleProject() {
             </section>
           )}
           {/* Challenges and Lessons */}
-          <section className="bg-white pb-[82px] text-black px-8 sm:px-14 xl:px-[100px]">
+          <section className="bg-white pb-[82px px-8 sm:px-14 xl:px-[100px]">
             {project?.challengeAndLessonsText && (
-              <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
+              <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Challenges and Lessons
               </h2>
             )}
             {(!project?.challengeAndLessonsText || !project?.outcome) && (
-              <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
+              <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Outcome
               </h2>
             )}

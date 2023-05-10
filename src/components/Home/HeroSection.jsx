@@ -41,16 +41,16 @@ export default function HeroSection() {
       />
       <h1 className="">
         <span className="hero-item text flex gap-3 md:gap-[18px] items-center mb-2">
-          <span className="text-5xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
+          <span className="text-4xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
             HI, I’M IFY
           </span>
           <img className="w-10 md:w-[60px] lg:w-[72px]" src={frame} alt="" />
         </span>
-        <span className="hero-item text text-5xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
+        <span className="hero-item text text-4xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
           PRODUCT DESIGNER
         </span>
       </h1>
-      <p className="max-w-[1200px]hero-item pText text font-onest mt-8 md:text-xl lg:text-2xl">
+      <p className="max-w-[1200px] hero-item pText text font-onest mt-8 md:text-xl lg:text-2xl">
         I’m a designer whose focus is to not only make interfaces that work
         well, but also ones that are enjoyable to use. I have a strong
         enthusiasm for my work and constantly strive to improve my abilities in

@@ -1,8 +1,15 @@
 import { lazy, Suspense, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Loader from "./components/Loader";
 import NotFound from "./pages/NotFound";
 import { Navbar } from "./components/Navbar/Navbar";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import ScrollToTop from "./components/ScrollToTop";
 
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
@@ -10,8 +17,9 @@ const SingleProject = lazy(() => import("./pages/SingleProject"));
 
 function App() {
   return (
-    <div className="scroll-smooth overflow-y-scroll overflow-x-hidden bg-[#111111]">
+    <div id="top" className="scroll-smooth overflow-x-hidden bg-[#111111]">
       <Router>
+        <ScrollToTop />
         <Suspense fallback={<Loader />}>
           <Navbar />
           <Routes>
