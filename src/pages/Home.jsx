@@ -46,20 +46,8 @@ export default function Home() {
     }, container);
     return () => ctx.revert();
 
-    // tl.from(".card_2", { yPercent: 100 })
-    //   .from(".card_3", { xPercent: -100 })
-    //   .from(".card_4", { yPercent: 100 });
-    // ScrollTrigger.create({
-    //   animation: tl,
-    //   trigger: "#card_container",
-    //   start: "top top",
-    //   // end: "+=4000",
-    //   scrub: true,
-    //   pin: true,
-    //   markers: true,
-    //   anticipatePin: 1,
-    // });
   }, []);
+  
   return (
     <div ref={container}>
       <Transition />

@@ -39,22 +39,22 @@ export default function HeroSection() {
         src={avatar}
         alt="Unique Ideas avatar"
       />
-      <h1 className="">
+      <h1 className="font-league-gothic">
         <span className="hero-item text flex gap-3 md:gap-[18px] items-center mb-2">
-          <span className="text-4xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
-            HI, I’M IFY
+          <span className="text-5xl md:text-7xl lg:text-8xl tracking-[-0.03em]">
+            HI, I’M IFY!
           </span>
           <img className="w-10 md:w-[60px] lg:w-[72px]" src={frame} alt="" />
         </span>
-        <span className="hero-item text text-4xl md:text-6xl lg:text-8xl tracking-[-0.03em]">
-          PRODUCT DESIGNER
+        <span className="hero-item text text-5xl md:text-7xl lg:text-8xl tracking-[-0.03em]">
+          I DESIGN DIGITAL PRODUCTS
         </span>
       </h1>
-      <p className="max-w-[1200px] hero-item pText text font-onest mt-8 md:text-xl lg:text-2xl">
+      <p className="max-w-[1200px] hero-item pText text mt-8 md:text-xl lg:text-2xl">
         I’m a designer whose focus is to not only make interfaces that work
         well, but also ones that are enjoyable to use. I have a strong
         enthusiasm for my work and constantly strive to improve my abilities in
-        order to become an expert in my field.{" "}
+        order to become an expert in my field.
       </p>
     </section>
   );
