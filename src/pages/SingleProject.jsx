@@ -67,7 +67,7 @@ export default function SingleProject() {
         <div className="bg-[#111111] hero-item text pt-16 md:pt-20">
           <img
             onClick={redirect}
-            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 md:w-40 pb-16 md:pb-20 lg:w-28"
+            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 md:w-40 pb-16 md:pb-20 "
             src={arrowLeftCircle}
             alt="arrow left"
           />
@@ -235,8 +235,14 @@ export default function SingleProject() {
               )}
             </div>
           </section>
+          {/* scope of work */}
+          <section className="px-8 sm:px-14 xl:px-[100px]">
+          <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
+              The <span className="text-[#5D5FEF]">Process</span>
+            </h2>
+          </section>
           {/* The process */}
-          <section className="bg-white pt-16 pb-12 md::pb-[100px] px-8 sm:px-14 xl:px-[100px]">
+          <section className="pt-16 pb-12 md::pb-[100px] px-8 sm:px-14 xl:px-[100px]">
             <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
               The <span className="text-[#5D5FEF]">Process</span>
             </h2>

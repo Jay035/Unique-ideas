@@ -21,14 +21,14 @@ export default function MyWork() {
       let panels = gsap.utils.toArray(".panel").forEach((wrapper, i) => {
         ScrollTrigger.create({
           trigger: wrapper,
-          start:  "top top",
+          start: "top top",
           // () =>
           //   panel.offsetHeight < window.innerHeight
           //     ? "top top"
           //     : "bottom bottom",
           pin: true,
           pinSpacing: false,
-          snap: 1
+          snap: 1,
         });
         gsap.from(wrapper.children, {
           // y: 50,
@@ -39,9 +39,9 @@ export default function MyWork() {
             trigger: wrapper,
             start: "top center",
             end: "top top",
-            toggleActions: "play none reverse reset"
-          }
-        })
+            toggleActions: "play none reverse reset",
+          },
+        });
       });
       // let tops = panels.map((panel) =>
       //   ScrollTrigger.create({ trigger: panel, start: "top top" })
@@ -93,7 +93,12 @@ export default function MyWork() {
             // className="panel cursor-pointer snap-start w-full h-screen relative"
           >
             <img
-              className="w-full h-screen max-h-screen object-cover object-center"
+              className="hidden lg:block w-full h-screen max-h-screen object-cover object-center"
+              src={project?.heroImg}
+              alt="work img"
+            />
+            <img
+              className="lg:hidden w-full h-screen max-h-screen object-cover"
               src={project?.heroImgMobile}
               alt="work img"
             />
