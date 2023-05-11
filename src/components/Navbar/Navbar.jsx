@@ -63,7 +63,7 @@ export function Navbar() {
         } absolute top-0 bg-[#111111] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
         <ul className="list-none flex mt-[50%] lg:mt-0 flex-col items-center gap-9 lg:flex-row">
-          <li onClick={() => setMenuOpen((prevState) => !prevState)}>
+          <li onClick={() => setMenuOpen(false)}>
             <HashLink
               to="/#myWorks"
               className="nav_item lg:text-2xl hover:font-bold"
@@ -71,7 +71,7 @@ export function Navbar() {
               WORK
             </HashLink>
           </li>
-          <li onClick={() => setMenuOpen((prevState) => !prevState)}>
+          <li onClick={() => setMenuOpen(false)}>
             <HashLink
               to="/#about"
               className="nav_item lg:text-2xl hover:font-bold"
@@ -79,7 +79,7 @@ export function Navbar() {
               ABOUT
             </HashLink>
           </li>
-          <li onClick={() => setMenuOpen((prevState) => !prevState)}>
+          <li onClick={() => setMenuOpen(false)}>
             <HashLink
               to="/#contact"
               className="nav_item lg:text-2xl hover:font-bold"
@@ -94,7 +94,7 @@ export function Navbar() {
               className="list_item flex items-center gap-[10px] border rounded-[30px] px-4 py-3 hover:bg-[#9E77ED] hover:border-[#9E77ED]"
             >
               MY RESUME
-              <img src={arrowLeft} alt="" />
+              <img src={arrowLeft} alt="arrow" />
             </a>
           </button>
         </ul>

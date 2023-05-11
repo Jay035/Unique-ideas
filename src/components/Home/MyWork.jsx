@@ -93,12 +93,13 @@ export default function MyWork() {
             // className="panel cursor-pointer snap-start w-full h-screen relative"
           >
             <img
-              className="hidden lg:block w-full h-screen max-h-screen object-cover object-center"
+              className={`hidden lg:block w-full h-screen max-h-screen object-cover object-center`}
               src={project?.heroImg}
               alt="work img"
             />
+            {/* mobile img */}
             <img
-              className="lg:hidden w-full h-screen max-h-screen object-cover object-center"
+              className={`lg:hidden w-full h-screen max-h-screen object-cover ${project?.objectPosition}`}
               src={project?.heroImgMobile}
               alt="work img"
             />

@@ -37,6 +37,7 @@ export default function Home() {
       });
       gsap.from(".text", {
         y: -100,
+        width: 0,
         duration: 2,
       });
       gsap.from(".pText", {

@@ -50,7 +50,7 @@ export default function HeroSection() {
           I DESIGN DIGITAL PRODUCTS
         </span>
       </h1>
-      <p className="max-w-[1200px] hero-item pText text mt-8 md:text-xl lg:text-2xl">
+      <p className="lg:max-w-[1200px] hero-item pText text mt-8 md:text-xl lg:text-2xl">
         I’m a designer whose focus is to not only make interfaces that work
         well, but also ones that are enjoyable to use. I have a strong
         enthusiasm for my work and constantly strive to improve my abilities in

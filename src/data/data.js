@@ -67,6 +67,7 @@ export const SkillsData = [
 ];
 // OfficeHR
 import officeHrHeroImg from "../assets/officeHR.png";
+import officeHrHeroImg2 from "../assets/officeHR_2.png";
 import officeHrHeroImgMobile from "../assets/officeHR_mobile.png";
 import officeHrExecutionImg from "../assets/officeHR-execution.png";
 import OfficeHRfirstMedia from "../assets/first media/HRMS.mp4";
@@ -75,6 +76,7 @@ import OfficeHRDesignVideo2 from "../assets/hrms/Employee Management.mp4";
 import OfficeHRDesignVideo3 from "../assets/hrms/Performance Management.mp4";
 import OfficeHRDesignVideo4 from "../assets/hrms/Payments.mp4";
 // HANG
+import hangHero2 from "../assets/HangHero_2.png";
 import hangHeroMobile from "../assets/HangHero_mobile.png";
 import hangHeroImg from "../assets/HangHero.png";
 import hangExecutionImg from "../assets/HangExecutionImg.png";
@@ -85,6 +87,7 @@ import hangDesign2 from "../assets/hang-design-2.png";
 import hangDesign3 from "../assets/hang-design-3.png";
 import hangDesign4 from "../assets/hang-design-4.png";
 // GIFTA
+// import giftaHero2 from "../assets/gifta Hero_mobile.png";
 import giftaHeroMobile from "../assets/gifta Hero_mobile.png";
 import giftaHero from "../assets/gifta Hero.png";
 import giftaExecutionImg from "../assets/gifta-execution.png";
@@ -97,7 +100,8 @@ import giftaVideo2 from "../assets/Gifta/Create organization.mp4";
 import giftaVideo3 from "../assets/Gifta/payments.mp4";
 import GiftaFirstMedia from "../assets/first media/Gifta.mp4";
 // ID_UNILAG
-import IdUNILAGHeroMobile from "../assets/ID_UNILAG_Hero_mobile.png";
+import IdUNILAGHero2 from "../assets/ID_UNILAG_Hero2.png";
+// import IdUNILAGHeroMobile from "../assets/ID_UNILAG_Hero_mobile.png";
 import IdUNILAGHero from "../assets/ID_UNILAG_Hero.png";
 import IdUNILAGirstMedia from "../assets/first media/Unilag ID.mp4";
 import IdUNILAGDesign1 from "../assets/ID_UNILAG_Design1.png";
@@ -107,6 +111,7 @@ import IdUNILAGDesign4 from "../assets/ID_UNILAG_Design4.png";
 import IdUNILAGDesign5 from "../assets/ID_UNILAG_Design5.png";
 import IdUNILAGDesign6 from "../assets/ID_UNILAG_Design6.png";
 // TidePay
+import TidePayHero2 from "../assets/TidePayHero_2.png";
 import TidePayHeroMobile from "../assets/TidePayHero_mobile.png";
 import TidePayHero from "../assets/TidePayHero.png";
 // SoliMax
@@ -119,12 +124,13 @@ export const projectsData = [
     name: "OfficeHR",
     year: "2022",
     yearColor: "#5D5FEF",
+    objectPosition: "object-right",
     proposal: false,
     style: "border-t border-[#3C414B]",
     tag: ["HR", "People Management"],
     disabled: false,
     heroImg: officeHrHeroImg,
-    heroImgMobile: officeHrHeroImgMobile,
+    heroImgMobile: officeHrHeroImg2,
     overview: "",
     overviewImg: "",
     firstMedia: OfficeHRfirstMedia,
@@ -209,11 +215,12 @@ export const projectsData = [
     proposal: false,
     year: "2023",
     yearColor: "#9CFF8F",
+    objectPosition: "object-center",
     style: "border-t border-[#3C414B]",
     tag: ["Social App"],
     disabled: false,
     heroImg: hangHeroImg,
-    heroImgMobile: hangHeroMobile,
+    heroImgMobile: hangHero2,
     overview: [
       "The rise of social media has now transformed the way people interact with each other, but it has also led to a significant decrease in physical interaction amongst humans. Although social media has made it easier for people to connect with each other, it has also made it easier to maintain surface-level relationships without ever meeting face-to-face. In turn, this has contributed to a decline in community building, networking, and the development of real connections.",
       "Physical interaction is crucial for building a sense of community, as it allows people to develop deeper connections with one another. When individuals meet in person, they can share experiences, thoughts, and emotions that are difficult to convey through digital means. In-person interactions also provide an opportunity for non-verbal communication, which can often convey more than words alone. Generally, physical interaction creates room for individuals to establish trust, empathy, and a deeper understanding of one another, which is essential for building long-lasting relationships.",
@@ -296,6 +303,7 @@ export const projectsData = [
     proposal: false,
     year: "2022",
     yearColor: "#5D5FEF",
+    objectPosition: "object-center",
     style: "border-t border-[#3C414B]",
     tag: ["Social Capital"],
     disabled: false,
@@ -374,11 +382,12 @@ export const projectsData = [
     proposal: true,
     year: "2023",
     yearColor: "#5D5FEF",
+    objectPosition: "object-center",
     style: "border-t border-[#3C414B]",
     tag: ["DigitalID", "Security"],
     disabled: false,
     heroImg: IdUNILAGHero,
-    heroImgMobile: IdUNILAGHeroMobile,
+    heroImgMobile: IdUNILAGHero2,
     firstMedia: IdUNILAGirstMedia,
     overview: [],
     why: [
@@ -453,16 +462,17 @@ export const projectsData = [
     outcome:
       "After our proposal presentation for ID-UNILAG, the departmental management has approved the project for implementation. The proposal will now be presented to the senate for final approval. If approved, ID-UNILAG will be developed and implemented for use by the university, providing a user-friendly, efficient, and secure platform for student ID card processing. The implementation of ID-UNILAG is expected to improve the overall experience for both students and administrators and streamline the ID card creation process, saving time and reducing the burden of physical processing.",
   },
-  // TidePay 
+  // TidePay
   {
     name: "TidePay",
     proposal: false,
     year: "2023",
     style: "border-t border-[#3C414B]",
+    objectPosition: "object-center",
     tag: [],
     disabled: true,
     heroImg: TidePayHero,
-    heroImgMobile: TidePayHeroMobile,
+    heroImgMobile: TidePayHero2,
     firstMedia: IdUNILAGirstMedia,
     overview: [],
     why: [
@@ -543,6 +553,7 @@ export const projectsData = [
     proposal: false,
     year: "2023",
     style: "border-y border-[#3C414B]",
+    objectPosition: "object-center",
     tag: [],
     disabled: true,
     heroImg: SoliMaxHero,
