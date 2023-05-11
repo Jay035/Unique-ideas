@@ -94,7 +94,7 @@ export default function MyWork() {
           >
             <img
               className={`hidden lg:block w-full h-screen max-h-screen object-cover object-center`}
-              src={project?.heroImg}
+              src={project?.heroImgMobile}
               alt="work img"
             />
             {/* mobile img */}

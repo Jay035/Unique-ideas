@@ -468,7 +468,7 @@ export const projectsData = [
     proposal: false,
     year: "2023",
     style: "border-t border-[#3C414B]",
-    objectPosition: "object-center",
+    objectPosition: "object-right",
     tag: [],
     disabled: true,
     heroImg: TidePayHero,

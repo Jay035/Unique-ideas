@@ -11,6 +11,7 @@ import { useState } from "react";
 export default function Projects() {
   const navigate = useNavigate();
   const [projectImg, setProjectImg] = useState(officeHR);
+  const [objectposition, setObjectposition] = useState("object-center");
   const container = useRef(null);
   const showProjectDetails = (name, disabled) => {
     if (!disabled) {
@@ -20,9 +21,16 @@ export default function Projects() {
   };
 
   const toggleImage = (project) => {
+    if (project?.name === "TidePay" || project?.name === "OfficeHR") {
+      setObjectposition("object-right");
+    } else if (project?.name === "ID-UNILAG") {
+      setObjectposition("object-left");
+    } else {
+      setObjectposition("object-center");
+    }
     setProjectImg(project?.heroImgMobile);
     gsap.to(".project-img", {
-      ease: Power3.easeIn
+      ease: Power3.easeIn,
     });
   };
 
@@ -33,15 +41,14 @@ export default function Projects() {
         skewY: -10,
         x: -100,
         opacity: 0,
-        ease: Power3
+        ease: Power3,
       });
       gsap.from(".skewRight", {
-        delay: .2,
+        delay: 0.2,
         skewY: 10,
         x: 100,
         opacity: 0,
       });
-      
     }, container);
     return () => ctx.revert();
   }, []);
@@ -92,7 +99,7 @@ export default function Projects() {
           </div>
           <div className="skewRight project-img hidden lg:flex mt-20 lg:mt-0 w-full lg:min-w-[640px] ">
             <img
-              className="object-[40%] px-4 object-cover w-full transition-all ease-in-out"
+              className={`${objectposition} px-4 object-cover w-full transition-all ease-in-out`}
               src={projectImg}
               alt=""
             />
