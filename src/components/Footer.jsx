@@ -16,7 +16,7 @@ export default function Footer() {
       <h1 className="mt-4 mb-6 text-white text-[40px] leading-[1] md:text-5xl xl:text-[120px] tracking-[-0.03em]">
         Get in touch
       </h1>
-      <section className="flex md:items-center justify-between gap-4">
+      <section className="flex md:items-center flex-col sm:flex-row justify-between gap-8">
         <a
           href="mailto:Uniqueideas85@gmail.com"
           className="bg-[#9CFF8F] hover:bg-[#9CFF8F]/80 rounded-[30px] w-fit flex items-center gap-[10px] py-2 md:py-3 px-4"

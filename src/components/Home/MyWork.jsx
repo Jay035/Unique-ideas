@@ -5,16 +5,27 @@ import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import { Power3 } from "gsap";
+import { useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function MyWork() {
   const navigate = useNavigate();
+  const [mouseEntered, setMouseEntered] = useState(false);
+  const container = useRef(null);
+
   const showProjectDetails = (name) => {
+    setMouseEntered(true);
     navigate(`/projects/${name}`);
   };
 
-  const container = useRef(null);
+  const zoomIn = () => {
+    setMouseEntered(true);
+  };
+
+  const zoomOut = () => {
+    setMouseEntered(false);
+  };
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -22,18 +33,15 @@ export default function MyWork() {
         ScrollTrigger.create({
           trigger: wrapper,
           start: "top top",
-          // () =>
-          //   panel.offsetHeight < window.innerHeight
-          //     ? "top top"
-          //     : "bottom bottom",
           pin: true,
           pinSpacing: false,
-          snap: 1,
+          // snap: 1,
         });
+        // gsap.to(wrapper.children, {
+        //   scale: "1.1",
+        // });
         gsap.from(wrapper.children, {
-          // y: 50,
-          // scale: 1,
-          duration: 2,
+          scale: "1.1",
           ease: Power3.easeOut,
           scrollTrigger: {
             trigger: wrapper,
@@ -46,7 +54,6 @@ export default function MyWork() {
       // let tops = panels.map((panel) =>
       //   ScrollTrigger.create({ trigger: panel, start: "top top" })
       // );
-
       // panels.forEach((panel, i) => {
       //   ScrollTrigger.create({
       //     trigger: panel,
@@ -59,7 +66,6 @@ export default function MyWork() {
       //     pinSpacing: false,
       //   });
       // });
-
       // ScrollTrigger.create({
       //   snap: {
       //     snapTo: (progress, self) => {
@@ -80,7 +86,7 @@ export default function MyWork() {
 
   return (
     <section ref={container} className="mb-[140px] pt-5 w-full" id="myWorks">
-      <h2 className="tracking-[-0.03em] font-league-gothic mb-12 px-8 sm:px-14 xl:px-20 text-3xl md:text-5xl">
+      <h2 className="tracking-[-0.03em] font-league-gothic mb-16 px-[10vw] text-5xl md:text-6xl">
         MY WORK
       </h2>
       {/* <div className="snap-y snap-mandatory overflow-y-scroll grid gap-12"> */}
@@ -89,22 +95,30 @@ export default function MyWork() {
           <div
             key={index}
             onClick={() => showProjectDetails(project?.name)}
+            onMouseEnter={zoomIn}
+            onMouseLeave={zoomOut}
             className="panel cursor-pointer w-full relative"
             // className="panel cursor-pointer snap-start w-full h-screen relative"
           >
             <img
-              className={`hidden lg:block w-full h-screen max-h-screen object-cover object-center`}
-              src={project?.heroImgMobile}
+              className={`hidden lg:block w-full h-screen min-h-screen transition-all ease-out duration-[0.3] ${
+                mouseEntered ? "scale-110" : "scale-100"
+              } object-cover object-center`}
+              src={
+                project?.name === "Gifta"
+                  ? project?.heroImg
+                  : project?.heroImgMobile
+              }
               alt="work img"
             />
             {/* mobile img */}
             <img
-              className={`lg:hidden w-full h-screen max-h-screen object-cover ${project?.objectPosition}`}
+              className={`lg:hidden w-full h-screen min-h-screen transition-all ease-out duration-[0.3] object-cover ${project?.objectPosition}`}
               src={project?.heroImgMobile}
               alt="work img"
             />
-            <div className="absolute bottom-6 lg:bottom-[53px] pl-6 lg:pl-12 flex flex-col gap-2 lg:gap-4">
-              <div className="flex items-center gap-2">
+            <div className="absolute bottom-6 lg:bottom-[53px] left-6 lg:left-12 flex flex-col gap-2 lg:gap-3">
+              <div className="flex items-center gap-2 scale-90">
                 {project?.tag?.map((tag, index) => (
                   <span
                     key={index}
@@ -114,7 +128,7 @@ export default function MyWork() {
                   </span>
                 ))}
               </div>
-              <h1 className="font-league-gothic text-[40px] md:text-7xl lg:text-[120px]">
+              <h1 className="font-league-gothic scale-90 text-[40px] md:text-7xl lg:text-[120px]">
                 {project?.name}
               </h1>
             </div>
@@ -123,7 +137,9 @@ export default function MyWork() {
       </div>
       <Link
         to="/projects"
-        className="mt-[790px] md:mt-[820px] w-full max-w-[180px] text-center tracking-[-0.03em] rounded-[30px] md:text-xl flex justify-center items-center mx-auto border py-3 px-4"
+        className={`${
+          mouseEntered ? "md:mt-[850px]" : ""
+        } mt-[790px] md:mt-[820px] w-full max-w-[180px] text-center tracking-[-0.03em] rounded-[30px] md:text-xl flex justify-center items-center mx-auto border py-3 px-4`}
       >
         SEE ALL WORKS
       </Link>

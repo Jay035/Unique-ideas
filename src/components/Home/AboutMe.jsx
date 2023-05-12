@@ -3,8 +3,8 @@ import Skills from "./Skills";
 
 export default function AboutMe() {
   return (
-    <section id="about" className="pt-5 px-8 sm:px-14 xl:px-[100px] pb-[106px]">
-      <h2 className="tracking-[-0.03em] text-3xl md:text-5xl mb-[15px]">
+    <section id="about" className="pt-5 px-[10vw] pb-[106px]">
+      <h2 className="tracking-[-0.03em] text-4xl md:text-6xl mb-[15px]">
         ABOUT ME
       </h2>
       <div className="pb-[100px] max-w-[991px]">

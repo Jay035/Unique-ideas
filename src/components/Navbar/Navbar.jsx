@@ -41,7 +41,7 @@ export function Navbar() {
   return (
     <nav
       ref={nav}
-      className="relative flex justify-between text-white items-center tracking-tight w-full gap-x-12 py-6 lg:pt-[52px] px-8 sm:px-14 xl:px-20"
+      className="relative flex justify-between text-white items-center tracking-tight w-full gap-x-12 py-6 lg:pt-[52px] px-[10vw]"
     >
       <section>
         <Link to="/" className="logo">

@@ -26,29 +26,32 @@ export default function Home() {
       });
       gsap.from(".hero-item", {
         stagger: {
-          amount: 0.4,
+          amount: 0.6,
         },
         ease: Power3.easeIn,
         opacity: 0,
       });
+      // gsap.from(".header-text", {
+      //   skewY: -10
+      // });
+
       gsap.from(".hero-img", {
         x: -100,
-        duration: 4,
-      });
-      gsap.from(".text", {
-        y: -100,
-        width: 0,
         duration: 2,
       });
+      gsap.from(".text", {
+        x: -100,
+        duration: 3,
+        skewY: 10,
+      });
       gsap.from(".pText", {
-        x: 100,
-        duration: 5,
+        // x: 100,
+        duration: 3,
       });
     }, container);
     return () => ctx.revert();
-
   }, []);
-  
+
   return (
     <div ref={container}>
       <Transition />
