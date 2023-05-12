@@ -32,7 +32,7 @@ export default function HeroSection() {
   return (
     <section
       ref={hero}
-      className="mb-[122px] w-full px-[10vw] mt-20 xl:mt-[150px]"
+      className="mb-[122px] w-full px-[9.5vw] mt-20 xl:mt-[150px]"
     >
       <img
         className="hero-item hero-img w-32 md:w-[146px] mb-8"
@@ -50,7 +50,7 @@ export default function HeroSection() {
           I DESIGN DIGITAL PRODUCTS
         </span>
       </h1>
-      <p className="lg:max-w-[991px] hero-item pText text mt-8 text-xl lg:text-3xl leading-[42px] text-[#F2F4F7]">
+      <p className="w-full hero-item pText text mt-8 text-xl lg:text-3xl leading-[42px] text-[#F2F4F7]">
         I’m a designer whose focus is to not only make interfaces that work
         well, but also ones that are enjoyable to use. I have a strong
         enthusiasm for my work and constantly strive to improve my abilities in

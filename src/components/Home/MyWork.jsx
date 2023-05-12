@@ -86,7 +86,7 @@ export default function MyWork() {
 
   return (
     <section ref={container} className="mb-[140px] pt-5 w-full" id="myWorks">
-      <h2 className="tracking-[-0.03em] font-league-gothic mb-16 px-[10vw] text-5xl md:text-6xl">
+      <h2 className="tracking-[-0.03em] font-league-gothic mb-16 px-[9.5vw] text-5xl md:text-6xl">
         MY WORK
       </h2>
       {/* <div className="snap-y snap-mandatory overflow-y-scroll grid gap-12"> */}
@@ -101,23 +101,20 @@ export default function MyWork() {
             // className="panel cursor-pointer snap-start w-full h-screen relative"
           >
             <img
-              className={`hidden lg:block w-full h-screen min-h-screen transition-all ease-out duration-[0.3] ${
+              className={` w-full h-screen min-h-screen transition-all ease-out ${
                 mouseEntered ? "scale-110" : "scale-100"
-              } object-cover object-center`}
-              src={
-                project?.name === "Gifta"
-                  ? project?.heroImg
-                  : project?.heroImgMobile
+              } object-cover ${project?.objectPosition}`}
+              src={project?.heroImgMobile
               }
               alt="work img"
             />
             {/* mobile img */}
-            <img
-              className={`lg:hidden w-full h-screen min-h-screen transition-all ease-out duration-[0.3] object-cover ${project?.objectPosition}`}
+            {/* <img
+              className={`lg:hidden w-full h-screen min-h-screen transition-all ease-out object-cover ${project?.objectPosition}`}
               src={project?.heroImgMobile}
               alt="work img"
-            />
-            <div className="absolute bottom-6 lg:bottom-[53px] left-6 lg:left-12 flex flex-col gap-2 lg:gap-3">
+            /> */}
+            <div className="absolute bottom-10 lg:bottom-20 left-6 lg:left-12 flex flex-col gap-2 lg:gap-3">
               <div className="flex items-center gap-2 scale-90">
                 {project?.tag?.map((tag, index) => (
                   <span
@@ -139,7 +136,7 @@ export default function MyWork() {
         to="/projects"
         className={`${
           mouseEntered ? "md:mt-[850px]" : ""
-        } mt-[790px] md:mt-[820px] w-full max-w-[180px] text-center tracking-[-0.03em] rounded-[30px] md:text-xl flex justify-center items-center mx-auto border py-3 px-4`}
+        } mt-[790px] md:mt-[850px] w-full max-w-[180px] text-center tracking-[-0.03em] rounded-[30px] md:text-xl flex justify-center items-center mx-auto border py-3 px-4`}
       >
         SEE ALL WORKS
       </Link>

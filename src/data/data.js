@@ -87,7 +87,7 @@ import hangDesign2 from "../assets/hang-design-2.png";
 import hangDesign3 from "../assets/hang-design-3.png";
 import hangDesign4 from "../assets/hang-design-4.png";
 // GIFTA
-// import giftaHero2 from "../assets/gifta Hero_mobile.png";
+import giftaHero2 from "../assets/gifta Hero_2.png";
 import giftaHeroMobile from "../assets/gifta Hero_mobile.png";
 import giftaHero from "../assets/gifta Hero.png";
 import giftaExecutionImg from "../assets/gifta-execution.png";
@@ -117,6 +117,7 @@ import TidePayHero from "../assets/TidePayHero.png";
 // SoliMax
 import SoliMaxHeroMobile from "../assets/SoliMaxHero_mobile.png";
 import SoliMaxHero from "../assets/SoliMaxHero.png";
+import SoliMaxHero2 from "../assets/SoliMaxHero_2.png";
 
 export const projectsData = [
   // officeHR
@@ -303,12 +304,12 @@ export const projectsData = [
     proposal: false,
     year: "2022",
     yearColor: "#5D5FEF",
-    objectPosition: "object-center",
+    objectPosition: "object-[top_center]",
     style: "border-t border-[#3C414B]",
     tag: ["Social Capital"],
     disabled: false,
     heroImg: giftaHero,
-    heroImgMobile: giftaHeroMobile,
+    heroImgMobile: giftaHero2,
     firstMedia: GiftaFirstMedia,
     overview: [],
     why: [
@@ -557,7 +558,7 @@ export const projectsData = [
     tag: [],
     disabled: true,
     heroImg: SoliMaxHero,
-    heroImgMobile: SoliMaxHeroMobile,
+    heroImgMobile: SoliMaxHero2,
     firstMedia: IdUNILAGirstMedia,
     overview: [],
     why: [

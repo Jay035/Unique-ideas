@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import arrowRight from "../assets/arrow-right-circle.svg";
-import officeHR from "../assets/officeHR.png";
+import officeHR from "../assets/officeHR_2.png";
 import { projectsData } from "../data/data";
 import Transition from "../components/Transition";
 import { useRef } from "react";
@@ -11,7 +11,7 @@ import { useState } from "react";
 export default function Projects() {
   const navigate = useNavigate();
   const [projectImg, setProjectImg] = useState(officeHR);
-  const [objectposition, setObjectposition] = useState("object-center");
+  const [objectposition, setObjectposition] = useState("object-right");
   const container = useRef(null);
   const showProjectDetails = (name, disabled) => {
     if (!disabled) {
@@ -23,9 +23,11 @@ export default function Projects() {
   const toggleImage = (project) => {
     if (project?.name === "TidePay" || project?.name === "OfficeHR") {
       setObjectposition("object-right");
-    } else if (project?.name === "ID-UNILAG") {
-      setObjectposition("object-left");
-    } else {
+    }
+    //  else if (project?.name === "ID-UNILAG") {
+    //   setObjectposition("object-left");
+    // } 
+    else {
       setObjectposition("object-center");
     }
     setProjectImg(project?.heroImgMobile);
