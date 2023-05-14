@@ -113,8 +113,8 @@ export default function MyWork() {
               src={project?.heroImgMobile}
               alt="work img"
             /> */}
-            <div className="absolute bottom-10 lg:bottom-20 left-6 lg:left-12 flex flex-col gap-2 lg:gap-3">
-              <div className="flex items-center gap-2 scale-90">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 sm:translate-y-0 sm:translate-x-0 sm:bottom-10 sm:top-[unset] lg:bottom-20 sm:left-6 lg:left-12 flex flex-col items-center sm:items-start gap-2 lg:gap-3">
+              <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-2 scale-90">
                 {project?.tag?.map((tag, index) => (
                   <span
                     key={index}
