@@ -37,7 +37,7 @@ export default function HeroSection() {
       <img
         className="hero-item hero-img w-32 md:w-[146px] mb-8"
         src={avatar}
-        alt="Unique Ideas avatar"
+        alt="Ify avatar"
       />
       <h1 className="font-league-gothic">
         <span className="hero-item text flex gap-3 md:gap-[18px] items-center mb-2">
@@ -50,7 +50,7 @@ export default function HeroSection() {
           I DESIGN DIGITAL PRODUCTS
         </span>
       </h1>
-      <p className="w-full hero-item pText text mt-8 text-xl lg:text-3xl leading-[42px] text-[#F2F4F7]">
+      <p className="w-full hero-item pText text mt-8 text-xl lg:text-3xl leading-8 md:leading-[42px] text-[#F2F4F7]">
         I’m a designer whose focus is to not only make interfaces that work
         well, but also ones that are enjoyable to use. I have a strong
         enthusiasm for my work and constantly strive to improve my abilities in

@@ -20,33 +20,32 @@ export default function Home() {
     let ctx = gsap.context(() => {
       gsap.from(".wrapper", {
         duration: 4,
-        // skewX: 10,
-        // x: -100,
-        opacity: 0,
+        // opacity: 0,
       });
+
       gsap.from(".hero-item", {
         stagger: {
           amount: 0.6,
         },
         ease: Power3.easeIn,
-        opacity: 0,
       });
-      // gsap.from(".header-text", {
-      //   skewY: -10
-      // });
 
       gsap.from(".hero-img", {
         x: -100,
+        opacity: 0,
         duration: 2,
       });
+
       gsap.from(".text", {
-        x: -100,
-        duration: 3,
+        x: 100,
+        opacity: 0,
+        duration: 2,
         skewY: 10,
       });
+
       gsap.from(".pText", {
         // x: 100,
-        duration: 3,
+        duration: 2,
       });
     }, container);
     return () => ctx.revert();

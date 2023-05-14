@@ -65,6 +65,11 @@ export const SkillsData = [
     style: "",
   },
 ];
+
+// Emojis
+import emoji1 from "../assets/expression-1.svg";
+import emoji2 from "../assets/expression-2.svg";
+import happyEmoji from "../assets/happy.svg";
 // OfficeHR
 import officeHrHeroImg from "../assets/officeHR.png";
 import officeHrHeroImg2 from "../assets/officeHR_2.png";
@@ -136,13 +141,14 @@ export const projectsData = [
     overviewImg: "",
     firstMedia: OfficeHRfirstMedia,
     why: [
+      "Most existing software for managing HR focuses on serving the needs of huge enterprises, leaving out middle sized or small companies that are just starting to scale.",
       "When i was approached to be a member of the team to create OfficeHR, I was delighted by the idea on what it is to be about. Having experienced working in start-ups, I could relate to how difficult carrying out HR processes was to the management. From hiring, onboarding, team management down to payments was a struggle. To these firms especially SMEs, it led to a lack of organization, time consuming in administrative tasks and even difficulty in tracking employee information and performance.",
-      "A migraine existed that needed to be attended to, We needed to create a solution, one that will help businesses, especially SMEs take care of their team while accommodating their pocket sizes. The solution is OfficeHR, an efficient and user friendly HRMS solution that caters to all the core HR processes, helping organizations better streamline their HR operations.",
+      "Experiencing the pain of structuring and managing talents, we came together with the idea to help SMEs by creating a software that would make the HR management process simple, fast and clear",
     ],
     examplesText: "",
     examples: [],
     what: [
-      "OfficeHR is a comprehensive HR platform offering a wide range of features to manage all aspects of the HR process from hiring to offboarding. It is intuitive, user friendly and easy to navigate, allowing business owners and HR professionals the liberty to efficiently manage their tasks while creating an enabling environment for employees to easily get acquainted with their workspace.",
+      "OfficeHR is a comprehensive HR platform that allows you to fully solve the problem of HR management, all in one place. It’s offering covers a wide range of features from hiring to offboarding. It’s aim is to be intuitive, user friendly and easy to navigate, allowing business owners and HR professionals the liberty to efficiently manage their tasks while creating an enabling environment for employees to easily get acquainted with their workspace.",
     ],
     myContribution: ["Product Strategy", "User Research", "UX/UI Design"],
     team: [
@@ -151,15 +157,46 @@ export const projectsData = [
       "1 HR professional",
     ],
     primaryResearch: [
-      "When we first began ideating for our HRMS product, we had a hypothesis but we needed to verify that our idea was an actual need in our target market. To validate our idea, I conducted surveys with our target groups: business owners, HR professionals and employees. The goal for this survey was to gain insight into HR processes these groups were currently using as well as any pain points they experienced. ",
-      "The survey revealed that many organizations struggled with managing HR processes, particularly as they grow in size. This confirmed our hypothesis. Responses received expressed frustration with manual processes and having to hop from one platform to another to execute tasks as this was prone to error and time consuming to manage. Business owners were interested in solutions that wil help them streamline HR operations, reduce costs amd improve employee satisfaction. ",
+      "When we first began ideating for our HRMS product, we had a hypothesis but we needed to verify that our idea was an actual need in our target market. To validate our idea, I conducted surveys with our target groups: business owners, HR professionals and employees. The goal for this survey was to gain insight into HR processes these groups were currently using as well as any pain points they experienced.",
+      "The survey revealed that many SMEs struggled with managing HR processes, particularly as they grow in size. Responses received expressed frustration with manual processes and having to hop from one platform to another to execute tasks as this was prone to error and took a lot of time to manage. Business owners were interested in solutions that wil help them streamline HR operations, reduce costs amd improve employee satisfaction. This confirmed our hypothesis.",
     ],
     additionalResearch: "",
     questionsText: "",
     questionsAsked: [],
     secondaryResearch: [
-      "When we first began ideating for our HRMS product, we had a hypothesis but we needed to verify that our idea was an actual need in our target market. To validate our idea, I conducted surveys with our target groups: business owners, HR professionals and employees. The goal for this survey was to gain insight into HR processes these groups were currently using as well as any pain points they experienced. ",
-      "The survey revealed that many organizations struggled with managing HR processes, particularly as they grow in size. This confirmed our hypothesis. Responses received expressed frustration with manual processes and having to hop from one platform to another to execute tasks as this was prone to error and time consuming to manage. Business owners were interested in solutions that wil help them streamline HR operations, reduce costs amd improve employee satisfaction. ",
+      "In addition to conducting surveys, I conducted a competitive analysis to better understand solutions already available. I identified several HRMS provides that offered similar services but many of them were either too expensive for SMEs to handle or only offered a limited set of HR processes.",
+      // "The survey revealed that many organizations struggled with managing HR processes, particularly as they grow in size. This confirmed our hypothesis. Responses received expressed frustration with manual processes and having to hop from one platform to another to execute tasks as this was prone to error and time consuming to manage. Business owners were interested in solutions that wil help them streamline HR operations, reduce costs amd improve employee satisfaction. ",
+    ],
+    researchSynthesis: [
+      "Understand key painpoints, wants and needs",
+      "Categorize all findings",
+      "Synthesize findings into actionable insights, document and present to the team/stakeholders.",
+    ],
+    keyTakeaways: [
+      {
+        emoji: emoji1,
+        text: "Too much time managing HR tasks and paperwork, which takes away from other important business activities",
+      },
+      {
+        emoji: emoji2,
+        text: "It's hard to keep up with changing HR regulations and compliance requirements, especially as my business grows",
+      },
+      {
+        emoji: happyEmoji,
+        text: "I want to ensure my employees are happy and engaged, but it's difficult to manage without an effective HR system in place",
+      },
+      {
+        emoji: emoji1,
+        text: "It's difficult to keep track of employee performance and feedback without a centralized system in place",
+      },
+      {
+        emoji: emoji2,
+        text: "We struggle with managing employee leave requests and ensuring that everyone is following company policies and procedures",
+      },
+      {
+        emoji: emoji2,
+        text: "I find it difficult to access important HR information like benefits and vacation policies",
+      },
     ],
     definingText:
       "With clear set out goals to become a home for all HR services, and research findings that validated our hypothesis, we dived into outlining key HR solutions to be accommodated.",

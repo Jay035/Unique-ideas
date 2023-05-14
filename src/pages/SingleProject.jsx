@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { projectsData } from "../data/data";
 import arrowDouble from "../assets/arrow-double-up.svg";
 import arrowLeftCircle from "../assets/arrow-left-circle.svg";
+import officeHRScopeImg from "../assets/officeHr-scope.png";
 import { Link } from "react-router-dom";
 import Transition from "../components/Transition";
 import emoji from "../assets/Emoji.svg";
@@ -62,16 +63,15 @@ export default function SingleProject() {
   return (
     <>
       <Transition />
-
       <main className="text-white overflow-x-hidden">
         <div className="bg-[#111111] hero-item text pt-16 md:pt-20">
           <img
             onClick={redirect}
-            className="cursor-pointer mx-8 sm:mx-14 xl:mx-[100px] w-16 pb-16 md:pb-20 "
+            className="cursor-pointer mx-[9.5vw] w-16 pb-16 md:pb-20 "
             src={arrowLeftCircle}
             alt="arrow left"
           />
-          <section className="px-8 sm:px-14 xl:px-[100px]">
+          <section className="px-[9.5vw]">
             <div className="flex items-center gap-2">
               {project?.tag?.map((tag, index) => (
                 <span
@@ -106,7 +106,7 @@ export default function SingleProject() {
         </section>
 
         <div className="bg-white text-[#344054] pb-10">
-          <section className="px-8 sm:px-14 xl:px-[100px]  py-[100px] bg-white">
+          <section className="px-[9.5vw] py-[100px] bg-white">
             <div className="grid lg:grid-cols-2 gap-6 lg:gap-0 lg:justify-between mb-[100px]">
               <h2 className="text-black font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
                 {project?.overview && "Overview"}
@@ -167,7 +167,7 @@ export default function SingleProject() {
             {/* <div className="h-72 w-full bg-slate-200"></div> */}
           </section>
           {/* WHAT IS ? */}
-          <section className="px-8 sm:px-14 xl:px-[100px] bg-white">
+          <section className="px-[9.5vw] bg-white">
             <h2 className="text-black font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
               What is <span className="text-[#5D5FEF]">{project?.name} ?</span>
             </h2>
@@ -236,15 +236,39 @@ export default function SingleProject() {
             </div>
           </section>
           {/* scope of work */}
-          {/* <section className="px-8 sm:px-14 xl:px-[100px]">
-          <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
-              The <span className="text-[#5D5FEF]">Process</span>
-            </h2>
-          </section> */}
+          {project?.name === "OfficeHR" && (
+            <section className="pt-16 pb-12 md::pb-[100px] px-[9.5vw]">
+              <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
+                The <span className="text-[#5D5FEF]">Scope of Work</span>
+              </h2>
+              <div className="flex before:content-[''] before:inline-flex before:mr-[22px] before:w-1 before:h-[73px] before:bg-[#039855] font-onest md:text-xl lg:text-2xl tracking-[-0.03em]">
+                <p>
+                  {" "}
+                  I used the{" "}
+                  <a
+                    target="_blank"
+                    href="https://medium.com/design-leadership-notebook/the-new-double-diamond-design-process-7c8f12d7945e"
+                    className="border-b border-[#344054] cursor-pointer"
+                  >
+                    Double Diamond Method
+                  </a>{" "}
+                  as a toolkit to guide my execution. This is because I find it
+                  to be well structured and suitable for the project.
+                </p>
+              </div>
+              <img className="mt-7" src={officeHRScopeImg} alt="scope img" />
+            </section>
+          )}
           {/* The process */}
-          <section className="pt-16 pb-12 md::pb-[100px] px-8 sm:px-14 xl:px-[100px]">
+          <section className="pt-16 pb-12 md::pb-[100px] px-[9.5vw]">
             <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
-              The <span className="text-[#5D5FEF]">Process</span>
+              {project?.name === "OfficeHR" ? (
+                "Discovery"
+              ) : (
+                <p>
+                  The <span className="text-[#5D5FEF]">Process</span>
+                </p>
+              )}
             </h2>
             {/* primary research */}
             <div className="flex flex-col gap-4 pb-8">
@@ -275,15 +299,17 @@ export default function SingleProject() {
                     </p>
                   ))}
 
-              <div className="font-onest">
-                <p>{project?.questionsText}</p>
-                <ul className="list-disc ml-6 flex flex-col gap-3 mt-3">
-                  {project?.questionsAsked?.length > 0 &&
-                    project?.questionsAsked?.map((question, index) => (
-                      <li key={index}>{question}</li>
-                    ))}
-                </ul>
-              </div>
+              {project?.questionsAsked?.length > 0 && (
+                <div className="font-onest">
+                  <p>{project?.questionsText}</p>
+                  <ul className="list-disc ml-6 flex flex-col gap-3 mt-3">
+                    {project?.questionsAsked?.length > 0 &&
+                      project?.questionsAsked?.map((question, index) => (
+                        <li key={index}>{question}</li>
+                      ))}
+                  </ul>
+                </div>
+              )}
               <p className="tracking-[-0.03em] font-onest">
                 {project?.additionalResearch}
               </p>
@@ -304,9 +330,49 @@ export default function SingleProject() {
                 ))}
               </div>
             )}
+            {/* Research Synthesis */}
+            {project?.researchSynthesis?.length > 0 && (
+              <div className="flex flex-col gap-4 pt-12">
+                <h3 className="text-black text-2xl md:text-[32px] font-semibold tracking-[-0.01em]">
+                  Synthesize Research, Uncover Findings
+                </h3>
+                <ul className="list-disc ml-6 flex flex-col gap-2">
+                  {project?.researchSynthesis?.map((item, index) => (
+                    <li key={index} className="font-onest text-[#333333]">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {/* Key Takeaways */}
+            {project?.keyTakeaways?.length > 0 && (
+              <div className="flex flex-col gap-4 pt-12">
+                <h3 className="text-black text-xl sm:text-2xl font-semibold tracking-[-0.01em]">
+                  Key Takeaways
+                </h3>
+                <div className="flex flex-col gap-x-[38px] gap-y-[22px]">
+                  {project?.keyTakeaways?.map((item, index) => (
+                    <div
+                      key={index}
+                      className="border py-[18px] px-[29px] w-full flex flex-col gap-4"
+                    >
+                      <img
+                        className="w-9 sm:w-[42.51px]"
+                        src={item.emoji}
+                        alt="emoji"
+                      />
+                      <p className="tracking-[-0.03em] text- sm:text-lg">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </section>
           {/* defining */}
-          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+          <section className="bg-white pb-[82px] px-[9.5vw]">
             <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               {project?.name === "OfficeHR"
                 ? "Defining our Product Offering"

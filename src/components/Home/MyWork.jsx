@@ -41,7 +41,7 @@ export default function MyWork() {
         //   scale: "1.1",
         // });
         gsap.from(wrapper.children, {
-          scale: "1.1",
+          // scale: "1.1",
           ease: Power3.easeOut,
           scrollTrigger: {
             trigger: wrapper,
@@ -104,8 +104,7 @@ export default function MyWork() {
               className={` w-full h-screen min-h-screen transition-all ease-out ${
                 mouseEntered ? "scale-110" : "scale-100"
               } object-cover ${project?.objectPosition}`}
-              src={project?.heroImgMobile
-              }
+              src={project?.heroImgMobile}
               alt="work img"
             />
             {/* mobile img */}
@@ -125,7 +124,7 @@ export default function MyWork() {
                   </span>
                 ))}
               </div>
-              <h1 className="font-league-gothic scale-90 text-[40px] md:text-7xl lg:text-[120px]">
+              <h1 className="font-league-gothic scale-90 text-6xl md:text-7xl lg:text-[120px]">
                 {project?.name}
               </h1>
             </div>
