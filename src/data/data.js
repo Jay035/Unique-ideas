@@ -73,7 +73,7 @@ import happyEmoji from "../assets/happy.svg";
 // OfficeHR
 import officeHrHeroImg from "../assets/officeHR.png";
 import officeHrHeroImg2 from "../assets/officeHR_2.png";
-import officeHrHeroImgMobile from "../assets/officeHR_mobile.png";
+import officeHrHeroImgDesktop from "../assets/officeHR_2_Desktop.png";
 import officeHrExecutionImg from "../assets/officeHR-execution.png";
 import OfficeHRfirstMedia from "../assets/first media/HRMS.mp4";
 import OfficeHRDesignVideo1 from "../assets/hrms/Hiring and Onboarding.mp4";
@@ -82,7 +82,7 @@ import OfficeHRDesignVideo3 from "../assets/hrms/Performance Management.mp4";
 import OfficeHRDesignVideo4 from "../assets/hrms/Payments.mp4";
 // HANG
 import hangHero2 from "../assets/HangHero_2.png";
-import hangHeroMobile from "../assets/HangHero_mobile.png";
+import hangHeroDesktop from "../assets/HangHero_2_Desktop.png";
 import hangHeroImg from "../assets/HangHero.png";
 import hangExecutionImg from "../assets/HangExecutionImg.png";
 import hangOverviewImg from "../assets/hangBanner.png";
@@ -94,6 +94,7 @@ import hangDesign4 from "../assets/hang-design-4.png";
 // GIFTA
 import giftaHero2 from "../assets/gifta Hero_2.png";
 import giftaHeroMobile from "../assets/gifta Hero_mobile.png";
+import giftaHeroDesktop from "../assets/gifta Hero_2_Desktop.png";
 import giftaHero from "../assets/gifta Hero.png";
 import giftaExecutionImg from "../assets/gifta-execution.png";
 import giftaExample1 from "../assets/gifta-example-1.png";
@@ -106,6 +107,7 @@ import giftaVideo3 from "../assets/Gifta/payments.mp4";
 import GiftaFirstMedia from "../assets/first media/Gifta.mp4";
 // ID_UNILAG
 import IdUNILAGHero2 from "../assets/ID_UNILAG_Hero2.png";
+import IdUNILAGHeroDesktop from "../assets/ID_UNILAG_Hero2_Desktop.png";
 // import IdUNILAGHeroMobile from "../assets/ID_UNILAG_Hero_mobile.png";
 import IdUNILAGHero from "../assets/ID_UNILAG_Hero.png";
 import IdUNILAGirstMedia from "../assets/first media/Unilag ID.mp4";
@@ -137,6 +139,7 @@ export const projectsData = [
     disabled: false,
     heroImg: officeHrHeroImg,
     heroImgMobile: officeHrHeroImg2,
+    heroImgDesktop: officeHrHeroImgDesktop,
     overview: "",
     overviewImg: "",
     firstMedia: OfficeHRfirstMedia,
@@ -259,6 +262,7 @@ export const projectsData = [
     disabled: false,
     heroImg: hangHeroImg,
     heroImgMobile: hangHero2,
+    heroImgDesktop: hangHeroDesktop,
     overview: [
       "The rise of social media has now transformed the way people interact with each other, but it has also led to a significant decrease in physical interaction amongst humans. Although social media has made it easier for people to connect with each other, it has also made it easier to maintain surface-level relationships without ever meeting face-to-face. In turn, this has contributed to a decline in community building, networking, and the development of real connections.",
       "Physical interaction is crucial for building a sense of community, as it allows people to develop deeper connections with one another. When individuals meet in person, they can share experiences, thoughts, and emotions that are difficult to convey through digital means. In-person interactions also provide an opportunity for non-verbal communication, which can often convey more than words alone. Generally, physical interaction creates room for individuals to establish trust, empathy, and a deeper understanding of one another, which is essential for building long-lasting relationships.",
@@ -347,6 +351,7 @@ export const projectsData = [
     disabled: false,
     heroImg: giftaHero,
     heroImgMobile: giftaHero2,
+    heroImgDesktop: giftaHeroDesktop,
     firstMedia: GiftaFirstMedia,
     overview: [],
     why: [
@@ -426,6 +431,7 @@ export const projectsData = [
     disabled: false,
     heroImg: IdUNILAGHero,
     heroImgMobile: IdUNILAGHero2,
+    heroImgDesktop: IdUNILAGHeroDesktop,
     firstMedia: IdUNILAGirstMedia,
     overview: [],
     why: [

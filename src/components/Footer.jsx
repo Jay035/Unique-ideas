@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="border-t border-[#1D2939] pt-20 pb-10 md:pb-14 md:pt-[84px] px-8 sm:px-14 xl:px-[100px]"
+      className="border-t border-[#1D2939] pt-20 pb-10 md:pb-14 md:pt-[84px] px-[9.5vw]"
     >
       <h4 className="text-[#9E77ED] tracking-[-0.03em] text-lg md:text-2xl lg:text-[30px] xl:leading-[40px]">
         READY TO WORK TOGETHER?

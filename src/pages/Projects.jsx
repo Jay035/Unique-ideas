@@ -24,11 +24,11 @@ export default function Projects() {
     if (project?.name === "TidePay" || project?.name === "OfficeHR") {
       setObjectposition("object-right");
     }
-    //  else if (project?.name === "ID-UNILAG") {
-    //   setObjectposition("object-left");
-    // } 
+     else if (project?.name === "ID-UNILAG") {
+      setObjectposition("object-right");
+    } 
     else {
-      setObjectposition("object-center");
+      setObjectposition("object-[top_right]");
     }
     setProjectImg(project?.heroImgMobile);
     gsap.to(".project-img", {
@@ -58,7 +58,7 @@ export default function Projects() {
   return (
     <div ref={container}>
       <Transition />
-      <div className="wrapper overflow-x-hidden bg-[#111111] w-full px-8 sm:px-14 xl:px-[100px] pb-[101px] mt-12">
+      <div className="wrapper overflow-x-hidden bg-[#111111] w-full px-[9.5vw] pb-[101px] mt-12">
         <section className="skewLeft flex justify-between items-center w-full mb-[120px]">
           <h1 className="w-full hero-item text text-5xl md:text-6xl lg:text-7xl xl:text-[120px] tracking-[-0.03em] text-white">
             RECENT <br /> PROJECTS
@@ -101,7 +101,7 @@ export default function Projects() {
           </div>
           <div className="skewRight project-img hidden lg:flex mt-20 lg:mt-0 w-full lg:min-w-[640px] ">
             <img
-              className={`${objectposition} px-4 object-cover w-full transition-all ease-in-out`}
+              className={`${objectposition} px-4 object-cover w-full transition-all max-h-[700px] ease-in-out`}
               src={projectImg}
               alt=""
             />

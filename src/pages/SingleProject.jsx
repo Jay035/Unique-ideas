@@ -26,36 +26,36 @@ export default function SingleProject() {
     console.log(project);
   };
   const container = useRef(null);
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      // gsap.from(".wrapper", {
-      //   duration: 4,
-      //   // skewX: 10,
-      //   // x: -100,
-      //   opacity: 0,
-      // });
-      // gsap.from(".hero-item", {
-      //   stagger: {
-      //     amount: 0.4,
-      //   },
-      //   ease: Power3.easeIn,
-      //   opacity: 0,
-      // });
-      // gsap.from(".hero-img", {
-      //   x: -100,
-      //   duration: 4,
-      // });
-      // gsap.from(".text", {
-      //   y: -100,
-      //   duration: 2,
-      // });
-      // gsap.from(".pText", {
-      //   x: 100,
-      //   duration: 5,
-      // });
-    }, container);
-    return () => ctx.revert();
-  }, []);
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     // gsap.from(".wrapper", {
+  //     //   duration: 4,
+  //     //   // skewX: 10,
+  //     //   // x: -100,
+  //     //   opacity: 0,
+  //     // });
+  //     // gsap.from(".hero-item", {
+  //     //   stagger: {
+  //     //     amount: 0.4,
+  //     //   },
+  //     //   ease: Power3.easeIn,
+  //     //   opacity: 0,
+  //     // });
+  //     // gsap.from(".hero-img", {
+  //     //   x: -100,
+  //     //   duration: 4,
+  //     // });
+  //     // gsap.from(".text", {
+  //     //   y: -100,
+  //     //   duration: 2,
+  //     // });
+  //     // gsap.from(".pText", {
+  //     //   x: 100,
+  //     //   duration: 5,
+  //     // });
+  //   }, container);
+  //   return () => ctx.revert();
+  // }, []);
 
   useEffect(() => {
     getSingleProject();
@@ -218,7 +218,7 @@ export default function SingleProject() {
                   </h4>
                   <ul className="list-disc md:text-xl lg:text-2xl ml-6">
                     {project?.team?.map((item, index) => (
-                      <li className="">{item}</li>
+                      <li key={index} className="">{item}</li>
                     ))}
                   </ul>
                 </div>

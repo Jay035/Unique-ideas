@@ -65,7 +65,8 @@ export function Navbar() {
         <ul className="list-none flex mt-[50%] lg:mt-0 flex-col items-center gap-9 lg:flex-row">
           <li onClick={() => setMenuOpen(false)}>
             <HashLink
-              to="/#myWorks"
+              to="/projects"
+              // to="/#myWorks"
               className="nav_item lg:text-2xl hover:font-bold"
             >
               WORK
