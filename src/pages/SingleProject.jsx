@@ -406,6 +406,7 @@ export default function SingleProject() {
             </p>
             {project?.executionImg && (
               <img
+              className="w-fit mx-auto"
                 src={project?.executionImg}
                 alt="project execution preview"
               />
@@ -477,7 +478,7 @@ export default function SingleProject() {
                 Challenges and Lessons
               </h2>
             )}
-            {(!project?.challengeAndLessonsText || project?.outcome) && (
+            {project?.outcome && (
               <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Outcome
               </h2>

@@ -269,7 +269,6 @@ export const projectsData = [
     ],
     overviewImg: hangOverviewImg,
     why: [],
-    examplesText: "",
     examples: [],
     what: [
       "Hang is a project that aims to promote physical interaction among individuals by providing a platform that facilitates the planning and execution of in-person hangouts. Hang encourages users to step away from their digital devices and connect with others in the real world. The platform allows users to create and join groups based on shared interests, hobbies, and activities, making it easier for users to find and connect with like-minded individuals.",
@@ -334,7 +333,6 @@ export const projectsData = [
       "Upon completion of the designs, we conducted rounds of user testing to ensure that our designs were user-friendly and effective. We worked with a diverse group of individuals, including creatives, remote workers, and members of online communities, to get a range of perspectives and feedback.",
       "During the testing process, we presented users with different iterations of our designs and asked for their feedback. We observed how users interacted with the platform and listened to their comments and suggestions. This feedback was then used to iterate on the design and make improvements.",
     ],
-    challengeAndLessonsText: "",
     challenges: [],
     outcome:
       "The testing phase of Hang was a success, with users responding positively to the platform's design and features. While we are proud of the progress we have made so far, we acknowledge that Hang is still in development and we are committed to continuing to improve the platform. We have set key performance indicators (KPIs) that we will use to measure the success of the platform, including user engagement and community growth. We are excited to see how these KPIs will be checked off as Hang continues to evolve and grow.",
@@ -370,7 +368,6 @@ export const projectsData = [
       "Sharing wishlists on social media platforms like Twitter and Instagram has become a trend in recent times. People often take screenshots of their notes app, where they have jotted down a list of items they want as gifts for their birthdays, anniversaries, or other special occasions, and post it on social media platforms.",
       "As this trend gained momentum, it became clear that people are looking for a more streamlined way to create and share wishlists, plan group purchase and raise funds. The confirmation of the need for Gifta also came through informal discussions with acquaintances. Many people expressed their desire for a platform that like Gifta and now we are bringing Gifta to all.      ",
     ],
-    questionsText: "",
     questionsAsked: [],
     primaryResearch: [],
     secondaryResearch: [],
@@ -415,9 +412,7 @@ export const projectsData = [
     testing: [
       "User testing and feedback played a role in the final look of the Gifta platform. By testing our designs with real people, I, in sync with the rest of the team was able to identify areas where the platform could be improved and address any usability issues. We had one goal, and that was to create a platform that is user friendly and visually appealing and the feedback we received showed we are headed in the right direction. The Gifta team is committed to constantly improving the platform to be in line with our users demands.",
     ],
-    challengeAndLessonsText: "",
     challenges: [],
-    outcome: "",
   },
   // ID_UNILAG
   {
