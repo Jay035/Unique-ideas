@@ -397,7 +397,7 @@ export default function SingleProject() {
             </div>
           </section>
           {/* The execution */}
-          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+          <section className="bg-white pb-[82px] px-[9.5vw]">
             <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               The Execution
             </h2>
@@ -416,7 +416,7 @@ export default function SingleProject() {
             )} */}
           </section>
           {/* The design */}
-          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+          <section className="bg-white pb-[82px] px-[9.5vw]">
             <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               {project?.name === "ID-UNILAG" ? "Designs" : "The Design"}
             </h2>
@@ -457,7 +457,7 @@ export default function SingleProject() {
           </section>
           {/* Testing */}
           {project?.testing?.length > 0 && (
-            <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+            <section className="bg-white pb-[82px] px-[9.5vw]">
               <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Testing
               </h2>
@@ -472,7 +472,7 @@ export default function SingleProject() {
             </section>
           )}
           {/* Challenges and Lessons */}
-          <section className="bg-white pb-[82px] px-8 sm:px-14 xl:px-[100px]">
+          <section className="bg-white pb-[82px] px-[9.5vw]">
             {project?.challengeAndLessonsText && (
               <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Challenges and Lessons
