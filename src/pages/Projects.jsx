@@ -77,7 +77,7 @@ export default function Projects() {
                   showProjectDetails(project?.name, project?.disabled)
                 }
                 onMouseEnter={() => toggleImage(project)}
-                onMouseLeave={() => toggleImage(project)}
+                // onMouseLeave={() => toggleImage(project)}
                 className={`${project?.style} ${
                   !project?.disabled ? "cursor-pointer" : "cursor-default"
                 } flex justify-between items-center py-4 lg:py-8`}
