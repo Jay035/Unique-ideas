@@ -29,7 +29,7 @@ export default function Projects() {
       setObjectposition("object-[top_right]");
     }
     setProjectImg(project?.heroImgMobile);
-    console.log(projectImg);
+    console.log(project?.heroImgMobile);
     gsap.to(".project-img", {
       ease: Power3.easeIn,
     });
