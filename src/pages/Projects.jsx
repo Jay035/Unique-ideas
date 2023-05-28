@@ -23,14 +23,13 @@ export default function Projects() {
   const toggleImage = (project) => {
     if (project?.name === "TidePay" || project?.name === "OfficeHR") {
       setObjectposition("object-right");
-    }
-     else if (project?.name === "ID-UNILAG") {
+    } else if (project?.name === "ID-UNILAG") {
       setObjectposition("object-right");
-    } 
-    else {
+    } else {
       setObjectposition("object-[top_right]");
     }
     setProjectImg(project?.heroImgMobile);
+    console.log(projectImg);
     gsap.to(".project-img", {
       ease: Power3.easeIn,
     });
