@@ -141,7 +141,7 @@ export default function SingleProject() {
                   {project.examplesText}{" "}
                   <img className="w-8 lg:w-9" src={emoji} alt="emoji" />
                 </p>
-                <div className="flex gap-8 pt-4 flex-wrap">
+                <div className="flex gap-8 pt-4 flex-wrap lg:grid lg:grid-cols-2 xl:grid-cols-3">
                   {project?.examples &&
                     project?.examples?.map((item, index) => (
                       <img key={index} src={item} alt="project example" />
@@ -301,16 +301,16 @@ export default function SingleProject() {
 
               {project?.questionsAsked?.length > 0 && (
                 <div className="font-onest">
-                  <p>{project?.questionsText}</p>
+                  <p className="md:text-xl lg:text-2xl tracking-[-0.03em]">{project?.questionsText}</p>
                   <ul className="list-disc ml-6 flex flex-col gap-3 mt-3">
                     {project?.questionsAsked?.length > 0 &&
                       project?.questionsAsked?.map((question, index) => (
-                        <li key={index}>{question}</li>
+                        <li key={index} className="md:text-xl lg:text-2xl tracking-[-0.03em]">{question}</li>
                       ))}
                   </ul>
                 </div>
               )}
-              <p className="tracking-[-0.03em] font-onest">
+              <p className="tracking-[-0.03em] font-onest md:text-xl lg:text-2xl">
                 {project?.additionalResearch}
               </p>
             </div>

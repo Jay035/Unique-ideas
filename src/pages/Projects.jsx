@@ -45,10 +45,11 @@ export default function Projects() {
         ease: Power3,
       });
       gsap.from(".skewRight", {
-        delay: 0.2,
+        delay: 1.2,
         skewY: 10,
         x: 100,
         opacity: 0,
+        ease: Power3,
       });
     }, container);
     return () => ctx.revert();
@@ -91,7 +92,7 @@ export default function Projects() {
                   </h2>
                 </div>
                 {project?.disabled && (
-                  <p className="text-center text-xs md:text-base text-[#DF99F7] py-2 md:py-3 px-2 md:px-4 rounded-[30px] border border-[#DF99F7]">
+                  <p className="skewRight text-center text-xs md:text-base text-[#DF99F7] py-2 md:py-3 px-2 md:px-4 rounded-[30px] border border-[#DF99F7]">
                   Coming soon
                 </p>
                 )}
