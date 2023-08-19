@@ -38,6 +38,14 @@ export default function Footer() {
           </a>
         </div>
       </section>
+      <p className="text-[#9CFF8F] font-semibold mt-4 flex md:justify-end">
+        Developed by{" "}
+        <a href="https://codexjay.vercel.app" className="pl-0.5">
+          {" "}
+          CodexJay
+        </a>
+        .
+      </p>
     </footer>
   );
 }

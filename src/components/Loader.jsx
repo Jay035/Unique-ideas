@@ -1,10 +1,12 @@
+import logo from "../assets/logo.svg";
+
 export default function Loader() {
   return (
     <div
       id="loader"
-      className="animate-pulse min-h-screen bg-[#474444]"
+      className="animate-pulse z-[99999999999999] flex justify-center items-center min-h-screen bg-[#474444]"
     >
-      {/* <h1 className="text-3xl md:text-5xl text-white">Unique Ideas</h1> */}
+      <img className="" src={logo} alt="logo" />
     </div>
   );
 }
