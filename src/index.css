@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("/fonts/neue-helvetica-cufonfonts/Helvetica\ Neue\ LT\ 75\ Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest Regular";
+  src: url("/fonts/Onest/TTF/Onest-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/NeueHaasDisplayRoman.ttf");
+}
+
+/* *{
+  border: 1px solid salmon;
+} */
+
+/* section > * {
+  overflow: hidden;
+} */
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.font-onest {
+  font-family: "Onest Regular", sans-serif;
+}
+
+.font-league-gothic {
+  font-family: 'League Gothic', sans-serif;
+}
+
+.active {
+  font-weight: 900;
+}
