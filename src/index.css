@@ -55,3 +55,10 @@ body {
 .active {
   font-weight: 900;
 }
+
+
+@media screen and (min-width: 2000px){
+  .app{
+    padding-inline: 10rem;
+  }
+}
