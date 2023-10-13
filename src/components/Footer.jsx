@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="border-t border-[#1D2939] pt-20 pb-10 md:pb-14 md:pt-[84px] px-[9.5vw]"
+      className="pt-20 pb-10 md:pb-14 md:pt-[84px] px-[9.5vw]"
     >
       <h4 className="text-[#9E77ED] tracking-[-0.03em] text-lg md:text-2xl lg:text-[30px] xl:leading-[40px]">
         READY TO WORK TOGETHER?
@@ -24,23 +24,23 @@ export default function Footer() {
           Send me an email <img src={arrowUpRight} alt="arrow right" />
         </a>
         <div className="flex gap-4 items-center">
-          <a href="https://wa.me/+2348103408082">
-            <img className="w-7" src={whatsapp} alt="whatsapp logo" />
-          </a>
-          <a href="https://www.behance.net/Iphie2591c53">
-            <img src={behance} alt="behance logo" />
-          </a>
           <a href="https://www.linkedin.com/in/ifeoma-ukandu/">
             <img src={LinkedIn} alt="linkedin logo" />
           </a>
           <a href="https://twitter.com/uniquee_ideas">
             <img src={twitter} alt="twitter logo" />
           </a>
+          <a href="https://wa.me/+2348103408082">
+            <img className="w-7" src={whatsapp} alt="whatsapp logo" />
+          </a>
+          {/* <a href="https://www.behance.net/Iphie2591c53">
+            <img src={behance} alt="behance logo" />
+          </a> */}
         </div>
       </section>
-      <p className="text-[#9CFF8F] font-semibold mt-4 flex md:justify-end">
+      <p className="text-[#9CFF8F] font-medium mt-4 flex md:justify-end">
         Developed by{" "}
-        <a href="https://codexjay.vercel.app" className="pl-0.5">
+        <a href="https://codexjay.vercel.app" className="pl-0.5 font-semibold">
           {" "}
           CodexJay
         </a>

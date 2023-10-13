@@ -20,6 +20,11 @@
   src: url("/fonts/NeueHaasDisplayRoman.ttf");
 }
 
+@font-face {
+  font-family: "SuisseWorks-Regular";
+  src: url("/fonts/SuisseWorks/SuisseWorks-Regular.ttf");
+}
+
 /* *{
   border: 1px solid salmon;
 } */
@@ -41,6 +46,10 @@ body {
 
 .font-league-gothic {
   font-family: 'League Gothic', sans-serif;
+}
+
+.font-SuisseWorks-Regular{
+  font-family: 'SuisseWorks-Regular', sans-serif;
 }
 
 .active {

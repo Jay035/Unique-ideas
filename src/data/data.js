@@ -1,75 +1,11 @@
-export const ExperiencesData = [
-  {
-    role: "UX  & Motion Designer",
-    company: "Aeeiee.inc",
-    duration: "January 2023 – today",
-    style: "border-b border-[#374151]",
-  },
-  {
-    role: "UX Designer",
-    company: "Aeeiee.inc",
-    duration: "February 2021 – December 2022",
-    style: "border-b border-[#374151]",
-  },
-  {
-    role: "User Experience Designer - Contract",
-    company: "Crownswap",
-    duration: "September – December 2021",
-    style: "border-b border-[#374151]",
-  },
-  {
-    role: "User Experience Intern",
-    company: "HNGi7",
-    duration: "May 2020 – August 2020",
-    style: "border-b border-[#374151]",
-  },
-  {
-    role: "User Experience Intern",
-    company: "Innovation Growth Hub",
-    duration: "Dec 2019 – March 2020",
-    style: "",
-  },
-];
-
-export const SkillsData = [
-  {
-    name: "Visual Design",
-    style: "border-b border-[#374151]",
-  },
-  {
-    name: "Interface Design",
-    style: "border-b border-[#374151]",
-  },
-  {
-    name: "User Experience Design",
-    style: "border-b border-[#374151]",
-  },
-  {
-    name: "User Research",
-    style: "border-b border-[#374151]",
-  },
-  {
-    name: "Usability Testing",
-    style: "border-b border-[#374151]",
-  },
-  {
-    name: "Product Strategy",
-    style: "border-b border-[#374151]",
-  },
-  {
-    name: "Motion Design",
-    style: "border-b border-[#374151]",
-  },
-  {
-    name: "No - code development",
-    style: "",
-  },
-];
 
 // Emojis
 import emoji1 from "../assets/expression-1.svg";
 import emoji2 from "../assets/expression-2.svg";
 import happyEmoji from "../assets/happy.svg";
+// VOOP AI
+import VoopImg from "../assets/VOOP AI.png";
+
 // OfficeHR
 import officeHrHeroImg from "../assets/officeHR.png";
 import officeHrHeroImg2 from "../assets/officeHR_2.png";
@@ -123,13 +59,223 @@ import TidePayHeroMobile from "../assets/TidePayHero_mobile.png";
 import TidePayHero from "../assets/TidePayHero.png";
 // SoliMax
 import SoliMaxHeroMobile from "../assets/SoliMaxHero_mobile.png";
-import SoliMaxHero from "../assets/SoliMaxHero.png";
+import SoliMaxHero from "../assets/SoliMax.png";
 import SoliMaxHero2 from "../assets/SoliMaxHero_2.png";
 
 export const projectsData = [
+  // VOOP AI
+  {
+    name: "VOOP AI",
+    subtitle: "Data Infrastructure & Analytics",
+    year: "2022",
+    yearColor: "#5D5FEF",
+    objectPosition: "object-right",
+    proposal: false,
+    style: "border-t border-[#3C414B]",
+    tag: ["HR", "People Management"],
+    disabled: false,
+    heroImg: VoopImg,
+    // heroImgMobile: officeHrHeroImg2,
+    // heroImgDesktop: officeHrHeroImgDesktop,
+    overview: "",
+    overviewImg: "",
+    firstMedia: OfficeHRfirstMedia,
+    why: [
+      "Most existing software for managing HR focuses on serving the needs of huge enterprises, leaving out middle sized or small companies that are just starting to scale.",
+      "When i was approached to be a member of the team to create OfficeHR, I was delighted by the idea on what it is to be about. Having experienced working in start-ups, I could relate to how difficult carrying out HR processes was to the management. From hiring, onboarding, team management down to payments was a struggle. To these firms especially SMEs, it led to a lack of organization, time consuming in administrative tasks and even difficulty in tracking employee information and performance.",
+      "Experiencing the pain of structuring and managing talents, we came together with the idea to help SMEs by creating a software that would make the HR management process simple, fast and clear",
+    ],
+    examplesText: "",
+    examples: [],
+    what: [
+      "OfficeHR is a comprehensive HR platform that allows you to fully solve the problem of HR management, all in one place. It’s offering covers a wide range of features from hiring to offboarding. It’s aim is to be intuitive, user friendly and easy to navigate, allowing business owners and HR professionals the liberty to efficiently manage their tasks while creating an enabling environment for employees to easily get acquainted with their workspace.",
+    ],
+    myContribution: ["Product Strategy", "User Research", "UX/UI Design"],
+    team: [
+      "1 Product Designer (me)",
+      "2 Software Engineers",
+      "1 HR professional",
+    ],
+    primaryResearch: [
+      "When we first began ideating for our HRMS product, we had a hypothesis but we needed to verify that our idea was an actual need in our target market. To validate our idea, I conducted surveys with our target groups: business owners, HR professionals and employees. The goal for this survey was to gain insight into HR processes these groups were currently using as well as any pain points they experienced.",
+      "The survey revealed that many SMEs struggled with managing HR processes, particularly as they grow in size. Responses received expressed frustration with manual processes and having to hop from one platform to another to execute tasks as this was prone to error and took a lot of time to manage. Business owners were interested in solutions that wil help them streamline HR operations, reduce costs amd improve employee satisfaction. This confirmed our hypothesis.",
+    ],
+    additionalResearch: "",
+    questionsText: "",
+    questionsAsked: [],
+    secondaryResearch: [
+      "In addition to conducting surveys, I conducted a competitive analysis to better understand solutions already available. I identified several HRMS provides that offered similar services but many of them were either too expensive for SMEs to handle or only offered a limited set of HR processes.",
+      // "The survey revealed that many organizations struggled with managing HR processes, particularly as they grow in size. This confirmed our hypothesis. Responses received expressed frustration with manual processes and having to hop from one platform to another to execute tasks as this was prone to error and time consuming to manage. Business owners were interested in solutions that wil help them streamline HR operations, reduce costs amd improve employee satisfaction. ",
+    ],
+    researchSynthesis: [
+      "Understand key painpoints, wants and needs",
+      "Categorize all findings",
+      "Synthesize findings into actionable insights, document and present to the team/stakeholders.",
+    ],
+    keyTakeaways: [
+      {
+        emoji: emoji1,
+        text: "Too much time managing HR tasks and paperwork, which takes away from other important business activities",
+      },
+      {
+        emoji: emoji2,
+        text: "It's hard to keep up with changing HR regulations and compliance requirements, especially as my business grows",
+      },
+      {
+        emoji: happyEmoji,
+        text: "I want to ensure my employees are happy and engaged, but it's difficult to manage without an effective HR system in place",
+      },
+      {
+        emoji: emoji1,
+        text: "It's difficult to keep track of employee performance and feedback without a centralized system in place",
+      },
+      {
+        emoji: emoji2,
+        text: "We struggle with managing employee leave requests and ensuring that everyone is following company policies and procedures",
+      },
+      {
+        emoji: emoji2,
+        text: "I find it difficult to access important HR information like benefits and vacation policies",
+      },
+    ],
+    definingText:
+      "With clear set out goals to become a home for all HR services, and research findings that validated our hypothesis, we dived into outlining key HR solutions to be accommodated.",
+    productOfferings: [
+      "Hiring and onboarding",
+      "Employee management",
+      "Performance reviews",
+      "Payroll and benefits",
+      "Leave management",
+      "Offboarding",
+    ],
+    execution:
+      "The goal was to ensure OfficeHR was intuitive, user friendly and easy to navigate so to kick that off, i put up a user flow, one that highlights the hierarchy of our platform.",
+    executionImg: officeHrExecutionImg,
+    design: [
+      {
+        video: OfficeHRDesignVideo1,
+        title: "Hiring & Onboarding",
+        description:
+          "OfficeHR makes it easy to manage the recruitment process, from posting job vacancies to tracking applications and scheduling interviews. The platform allows HR professionals to create customized onboarding workflows, ensuring a smooth transition for new hires.",
+      },
+      {
+        video: OfficeHRDesignVideo2,
+        title: "Employment Management",
+        description:
+          "OfficeHR provides a centralized platform for managing employee data, including personal information, employment history, and performance evaluations. HR professionals can easily access this information, track progress, and make changes as needed.",
+      },
+      {
+        video: OfficeHRDesignVideo3,
+        title: "Performance Management",
+        description:
+          "OfficeHR provides tools for setting and tracking goals, conducting performance evaluations, and providing feedback to employees. This helps to ensure that employees are meeting expectations and contributing to the company's success.",
+      },
+      {
+        video: OfficeHRDesignVideo4,
+        title: "Payroll and Benefits",
+        description:
+          "OfficeHR offers tools to manage payroll and benefits, including automatic calculations, tax deductions, and benefits administration. This helps to reduce errors and streamline the payroll process.",
+      },
+    ],
+    testing: [
+      "After completion of the first version of the designs, I proceeded to conduct remote testing. During this phase, I asked participants to complete various tasks on the platform such as hiring an employee, managing employees, completing payments and taking time off. I observed their behaviour and collected feedback. Based on these findings, I iterated on how the features functioned so as to improve the user experience.",
+    ],
+    challengeAndLessonsText:
+      "Working as a solo UX Designer came with its challenges. Those challenges though overcame include:",
+    challenges: [
+      "The requirements got somewhat complex because a HR management system is often multifaceted involving multiple user types. To bypass this, I put up an easy to use flow that accommodated all user types",
+      "Organizations may have unique HR policies and procedures, so ensuring the design is customizable to meet the specific needs of each organization poised a challenge",
+    ],
+  },
+  // SoliMax
+  {
+    name: "SoliMax",
+    subtitle: "Defi Launchpad",
+    proposal: false,
+    year: "2023",
+    style: "border-y border-[#3C414B]",
+    objectPosition: "object-center",
+    tag: [],
+    disabled: true,
+    heroImg: SoliMaxHero,
+    firstMedia: IdUNILAGirstMedia,
+    overview: [],
+    why: [
+      "As someone who attended a public university in Nigeria, I’ve experienced first hand how a regular student goes through a bunch of avoidable stress trying to manually complete processes that ideally, can be automated. The School ID collection is one out of many that needs a total overhaul of its process.",
+      "UNILAG, being one of the largest federal universities in Nigeria with a large population of students, having to manually issue IDs to its students is not only time-consuming but also costly, as it requires a significant investment in personnel and infrastructure, hence the need for a platform like ID_UNILAG.",
+      "By adopting an online platform, UNILAG can improve efficiency, reduce costs, enhance security, and provide convenience for both students and administrators. An online platform would enable students to create and manage their ID cards remotely, reducing the need for physical visits . At the same time, administrators can manage the process more efficiently, with all data stored in a centralized database, allowing for easy access and management.",
+    ],
+    examplesText: "",
+    examples: [],
+    what: [
+      "ID-UNILAG is an online platform designed to create and manage student ID cards for UNILAG, one of the largest federal universities in Nigeria. The platform's primary aim is to eradicate the traditional method of physical processing, which can be time-consuming, inefficient, and costly.",
+      "With ID-UNILAG, students can create and manage their ID cards remotely, eliminating the need for physical visits to the university. The platform is user-friendly and accessible, allowing students to easily navigate the interface and create their ID cards in a matter of minutes. The platform also ensures that all data is accurate and up-to-date, with all student information stored in a centralized database.",
+      "The platform is also designed to enhance security by preventing fraudulent activities, such as the creation of fake ID cards. ID-UNILAG uses advanced security measures, including facial verification, to ensure that all ID cards are authentic and cannot be tampered with. The platform is scalable, allowing the university to process large volumes of ID cards efficiently and cost-effectively.",
+    ],
+    myContribution: ["Product Strategy", "User Research", "UX/UI Design"],
+    team: ["1 Product Designer (Me)", "1 Software Engineer"],
+    research: [
+      "Although having experienced the inconvenience associated with this process, we needed validation of our hypothesis. This was to enable us gain more insight into the needs and preferences of our target audience and also, so we could build a more solid case for our proposal. The research process involved conducting interviews with students and administrators to understand their experiences with the traditional method of physical processing of ID cards and to identify their pain points.  It also involved studying similar platforms offering biometric verification to get a better understanding on how we could bring ours to live.",
+      "From my research findings, I discovered that students and administrators found the physical processing of ID cards to be time-consuming and frustrating. Some of the pain points identified included long queues, delays in processing, and the need to provide physical copies of documents. Students also expressed a preference for a platform that was easy to use and accessible from anywhere.",
+    ],
+    questionsText: "",
+    questionsAsked: [],
+    primaryResearch: [],
+    secondaryResearch: [],
+    additionalResearch: "",
+    definingtext:
+      "With clear set out goals to propose the need for a digital ID creation platform, we dived into outlining key features to be accommodated.",
+    productOfferings: [
+      "ID creation for new students",
+      "ID management for returning students",
+      "Stolen IDs",
+      "Admin / Management",
+    ],
+    execution:
+      "For a platform to be used by students and administrators, I had to ensure the design was easy to use and navigate. So to kick that off, i put up a user flow, containing all components of the web app laid out in hierarchy",
+    executionImg: hangExecutionImg,
+    design: [
+      {
+        img: IdUNILAGDesign1,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign2,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign3,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign4,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign5,
+        title: "",
+        description: "",
+      },
+      {
+        img: IdUNILAGDesign6,
+        title: "",
+        description: "",
+      },
+    ],
+    testing: [],
+    challengeAndLessonsText: "",
+    challenges: [],
+    outcome:
+      "After our proposal presentation for ID-UNILAG, the departmental management has approved the project for implementation. The proposal will now be presented to the senate for final approval. If approved, ID-UNILAG will be developed and implemented for use by the university, providing a user-friendly, efficient, and secure platform for student ID card processing. The implementation of ID-UNILAG is expected to improve the overall experience for both students and administrators and streamline the ID card creation process, saving time and reducing the burden of physical processing.",
+  },
   // officeHR
   {
     name: "OfficeHR",
+    subtitle: "People Management",
     year: "2022",
     yearColor: "#5D5FEF",
     objectPosition: "object-right",
@@ -252,7 +398,8 @@ export const projectsData = [
   },
   // Hang
   {
-    name: "Hang App",
+    name: "HANG",
+    subtitle: "Social App",
     proposal: false,
     year: "2023",
     yearColor: "#9CFF8F",
@@ -261,8 +408,8 @@ export const projectsData = [
     tag: ["Social App"],
     disabled: false,
     heroImg: hangHeroImg,
-    heroImgMobile: hangHero2,
-    heroImgDesktop: hangHeroDesktop,
+    // heroImgMobile: hangHero2,
+    // heroImgDesktop: hangHeroDesktop,
     overview: [
       "The rise of social media has now transformed the way people interact with each other, but it has also led to a significant decrease in physical interaction amongst humans. Although social media has made it easier for people to connect with each other, it has also made it easier to maintain surface-level relationships without ever meeting face-to-face. In turn, this has contributed to a decline in community building, networking, and the development of real connections.",
       "Physical interaction is crucial for building a sense of community, as it allows people to develop deeper connections with one another. When individuals meet in person, they can share experiences, thoughts, and emotions that are difficult to convey through digital means. In-person interactions also provide an opportunity for non-verbal communication, which can often convey more than words alone. Generally, physical interaction creates room for individuals to establish trust, empathy, and a deeper understanding of one another, which is essential for building long-lasting relationships.",
@@ -512,91 +659,6 @@ export const projectsData = [
     disabled: true,
     heroImg: TidePayHero,
     heroImgMobile: TidePayHero2,
-    firstMedia: IdUNILAGirstMedia,
-    overview: [],
-    why: [
-      "As someone who attended a public university in Nigeria, I’ve experienced first hand how a regular student goes through a bunch of avoidable stress trying to manually complete processes that ideally, can be automated. The School ID collection is one out of many that needs a total overhaul of its process.",
-      "UNILAG, being one of the largest federal universities in Nigeria with a large population of students, having to manually issue IDs to its students is not only time-consuming but also costly, as it requires a significant investment in personnel and infrastructure, hence the need for a platform like ID_UNILAG.",
-      "By adopting an online platform, UNILAG can improve efficiency, reduce costs, enhance security, and provide convenience for both students and administrators. An online platform would enable students to create and manage their ID cards remotely, reducing the need for physical visits . At the same time, administrators can manage the process more efficiently, with all data stored in a centralized database, allowing for easy access and management.",
-    ],
-    examplesText: "",
-    examples: [],
-    what: [
-      "ID-UNILAG is an online platform designed to create and manage student ID cards for UNILAG, one of the largest federal universities in Nigeria. The platform's primary aim is to eradicate the traditional method of physical processing, which can be time-consuming, inefficient, and costly.",
-      "With ID-UNILAG, students can create and manage their ID cards remotely, eliminating the need for physical visits to the university. The platform is user-friendly and accessible, allowing students to easily navigate the interface and create their ID cards in a matter of minutes. The platform also ensures that all data is accurate and up-to-date, with all student information stored in a centralized database.",
-      "The platform is also designed to enhance security by preventing fraudulent activities, such as the creation of fake ID cards. ID-UNILAG uses advanced security measures, including facial verification, to ensure that all ID cards are authentic and cannot be tampered with. The platform is scalable, allowing the university to process large volumes of ID cards efficiently and cost-effectively.",
-    ],
-    myContribution: ["Product Strategy", "User Research", "UX/UI Design"],
-    team: ["1 Product Designer (Me)", "1 Software Engineer"],
-    research: [
-      "Although having experienced the inconvenience associated with this process, we needed validation of our hypothesis. This was to enable us gain more insight into the needs and preferences of our target audience and also, so we could build a more solid case for our proposal. The research process involved conducting interviews with students and administrators to understand their experiences with the traditional method of physical processing of ID cards and to identify their pain points.  It also involved studying similar platforms offering biometric verification to get a better understanding on how we could bring ours to live.",
-      "From my research findings, I discovered that students and administrators found the physical processing of ID cards to be time-consuming and frustrating. Some of the pain points identified included long queues, delays in processing, and the need to provide physical copies of documents. Students also expressed a preference for a platform that was easy to use and accessible from anywhere.",
-    ],
-    questionsText: "",
-    questionsAsked: [],
-    primaryResearch: [],
-    secondaryResearch: [],
-    additionalResearch: "",
-    definingtext:
-      "With clear set out goals to propose the need for a digital ID creation platform, we dived into outlining key features to be accommodated.",
-    productOfferings: [
-      "ID creation for new students",
-      "ID management for returning students",
-      "Stolen IDs",
-      "Admin / Management",
-    ],
-    execution:
-      "For a platform to be used by students and administrators, I had to ensure the design was easy to use and navigate. So to kick that off, i put up a user flow, containing all components of the web app laid out in hierarchy",
-    executionImg: hangExecutionImg,
-    design: [
-      {
-        img: IdUNILAGDesign1,
-        title: "",
-        description: "",
-      },
-      {
-        img: IdUNILAGDesign2,
-        title: "",
-        description: "",
-      },
-      {
-        img: IdUNILAGDesign3,
-        title: "",
-        description: "",
-      },
-      {
-        img: IdUNILAGDesign4,
-        title: "",
-        description: "",
-      },
-      {
-        img: IdUNILAGDesign5,
-        title: "",
-        description: "",
-      },
-      {
-        img: IdUNILAGDesign6,
-        title: "",
-        description: "",
-      },
-    ],
-    testing: [],
-    challengeAndLessonsText: "",
-    challenges: [],
-    outcome:
-      "After our proposal presentation for ID-UNILAG, the departmental management has approved the project for implementation. The proposal will now be presented to the senate for final approval. If approved, ID-UNILAG will be developed and implemented for use by the university, providing a user-friendly, efficient, and secure platform for student ID card processing. The implementation of ID-UNILAG is expected to improve the overall experience for both students and administrators and streamline the ID card creation process, saving time and reducing the burden of physical processing.",
-  },
-  // SoliMax
-  {
-    name: "SoliMax",
-    proposal: false,
-    year: "2023",
-    style: "border-y border-[#3C414B]",
-    objectPosition: "object-center",
-    tag: [],
-    disabled: true,
-    heroImg: SoliMaxHero,
-    heroImgMobile: SoliMaxHero2,
     firstMedia: IdUNILAGirstMedia,
     overview: [],
     why: [

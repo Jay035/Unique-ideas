@@ -10,6 +10,9 @@ import Footer from "../components/Footer";
 import Transition from "../components/Transition";
 import { useEffect } from "react";
 import { Power3 } from "gsap";
+import Experiences from "../components/Home/Experiences";
+import Skills from "../components/Home/Skills";
+import Testimonials from "../components/Testimonials";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,10 +57,15 @@ export default function Home() {
   return (
     <div ref={container}>
       <Transition />
-      <main className="wrapper text-white bg-[#111111] w-full">
+      <main className="wrapper px-[9.5vw] text-white bg-[#111111] w-full">
         <HeroSection />
         <MyWork />
-        <AboutMe />
+        {/* <AboutMe /> */}
+        <div className="grid gap-20 lg:gap-24 lg:grid-cols-2">
+          <Experiences />
+          <Skills />
+        </div>
+        <Testimonials />
       </main>
       <Footer />
     </div>
