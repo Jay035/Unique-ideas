@@ -19,7 +19,7 @@ import OfficeHRDesignVideo4 from "../assets/hrms/Payments.mp4";
 // HANG
 import hangHero2 from "../assets/HangHero_2.png";
 import hangHeroDesktop from "../assets/HangHero_2_Desktop.png";
-import hangHeroImg from "../assets/HangHero.png";
+import hangHeroImg from "../assets/Hang.png";
 import hangExecutionImg from "../assets/HangExecutionImg.png";
 import hangOverviewImg from "../assets/hangBanner.png";
 import hangWhatImg from "../assets/hang-1.png";

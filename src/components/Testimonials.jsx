@@ -2,7 +2,7 @@ import avatar from "../assets/testimonial-avatar-1.svg";
 
 export default function Testimonials() {
   return (
-    <section className="my-[5.9rem] p-6 lg:px-[9rem] flex items-center flex-col text-center gap-[1.62rem] lg:py-[5.5rem] bg-[#171717] rounded-[0.625rem] border border-[#302F2F]">
+    <section className="my-[5.9rem] p-6 md:px-10 lg:px-[9rem] flex items-center flex-col text-center gap-[1.62rem] lg:py-[5.5rem] bg-[#171717] rounded-[0.625rem] border border-[#302F2F]">
       <img src={avatar} alt="avatar" />
       <p>
         Ifeoma is a highly skilled and experienced product designer with a deep

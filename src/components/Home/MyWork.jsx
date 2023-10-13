@@ -57,7 +57,7 @@ export default function MyWork() {
 
   return (
     <section ref={container} className="mb-[140px] pt-5 w-full" id="myWorks">
-      <h2 className="tracking-[-0.03em] font-SuisseWorks-Regular mb-[1.69rem] text-[1.75rem] leading-normal md:text-6xl">
+      <h2 className="tracking-[-0.03em] font-SuisseWorks-Regular mb-[1.69rem] text-[1.75rem] leading-normal">
         WORK
       </h2>
       {/* <div className="snap-y snap-mandatory overflow-y-scroll grid gap-12"> */}

@@ -33,7 +33,7 @@ export default function HeroSection() {
   return (
     <section
       ref={hero}
-      className="mb-[122px] w-full mt-20 xl:mt-[150px] grid gap-12 md:grid-cols-2"
+      className="mb-[122px] w-full mt-20 xl:mt-[150px] grid gap-12 lg:grid-cols-[auto_11rem]"
     >
       <div className="">
         <img
@@ -46,7 +46,7 @@ export default function HeroSection() {
           <br />
           <span className="">a Product Designer</span>
         </h1>
-        <p className="w-full hero-item pText text mt-4 text-lg leading-8 md:leading-[42px] text-[#AFB1AD]">
+        <p className="w-full hero-item pText text mt-4 text-lg leading-normal text-[#AFB1AD]">
           I’m a designer whose focus is to not only make interfaces that work
           well, but also ones that are enjoyable to use. I have a strong
           enthusiasm for my work and constantly strive to improve my abilities
@@ -54,7 +54,7 @@ export default function HeroSection() {
         </p>
       </div>
       {/* links */}
-      <div className="flex flex-col gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-6">
         <div className="text-sm">
           <p className="text-[#AFB1AD]">Download my Resume</p>
           <a
