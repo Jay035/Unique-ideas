@@ -1,18 +1,21 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { HashLink, NavHashLink } from "react-router-hash-link";
 import { Power3, gsap } from "gsap";
 import { useRef, useState } from "react";
 import { useLayoutEffect } from "react";
-import logo from "../../assets/logo.svg";
+import logoWhite from "../../assets/logo.svg";
+import logoBlack from "../../assets/logo-black.svg";
 import arrowLeft from "../../assets/arrow-down-left.svg";
 import Hamburger from "./Hamburger";
 
 export function Navbar() {
+  const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [checkboxState, setCheckboxState] = useState(false);
 
   let hamburger = useRef(null);
   let nav = useRef(null);
+  console.log(location);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -41,7 +44,11 @@ export function Navbar() {
   return (
     <nav
       ref={nav}
-      className="relative flex justify-between text-white items-center tracking-tight w-full gap-x-12 py-6 lg:pt-[52px] px-[10vw]"
+      className={`${
+        pathname === "/"
+          ? " bg-[#111111] text-white border-[#302F2F]"
+          : "text-black border-[#EAECF0]"
+      } relative flex justify-between border-b items-center tracking-tight w-full gap-x-12 pt-[0.94rem] pb-[0.82rem] px-[10vw]`}
     >
       <section>
         <Link to="/" className="logo">
@@ -49,7 +56,7 @@ export function Navbar() {
             className={`z-[99999] nav_item ${
               menuOpen && `absolute top-6 lg:top-[52px] md:relative`
             }`}
-            src={logo}
+            src={pathname === "/" ? logoWhite : logoBlack}
             alt="logo"
           />
         </Link>
@@ -64,18 +71,17 @@ export function Navbar() {
       >
         <ul className="list-none flex mt-[50%] lg:mt-0 flex-col items-center gap-9 lg:flex-row">
           <li onClick={() => setMenuOpen(false)}>
-            <HashLink
+            <Link
               to="/projects"
-              // to="/#myWorks"
-              className="nav_item lg:text-2xl hover:font-bold"
+              className="nav_item text-xl md:text-base hover:font-medium"
             >
               WORK
-            </HashLink>
+            </Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
             <HashLink
               to="/#about"
-              className="nav_item lg:text-2xl hover:font-bold"
+              className="nav_item text-xl md:text-base hover:font-medium"
             >
               ABOUT
             </HashLink>
@@ -83,21 +89,34 @@ export function Navbar() {
           <li onClick={() => setMenuOpen(false)}>
             <HashLink
               to="/#contact"
-              className="nav_item lg:text-2xl hover:font-bold"
+              className="nav_item text-xl md:text-base hover:font-medium"
             >
               CONTACT
             </HashLink>
           </li>
-          <button className="">
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/1JofDXbneOPnXA_CZ3wPilAO6pHRz7-h6/view?usp=sharing "
-              className="list_item flex items-center gap-[10px] border rounded-[30px] px-4 py-3 hover:bg-[#9E77ED] hover:border-[#9E77ED]"
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1JofDXbneOPnXA_CZ3wPilAO6pHRz7-h6/view?usp=sharing "
+            className={`list_item text-xl md:text-base hover:font-medium flex items-center gap-[10px] border ${pathname === "/" ? 'border-[#AFB1AD]' : 'border-[#202020]'} rounded-[30px] px-[0.57rem] py-[0.6rem] hover:border-[#9E77ED]`}
+          >
+            MY RESUME
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="14"
+              viewBox="0 0 15 14"
+              fill="none"
             >
-              MY RESUME
-              <img src={arrowLeft} alt="arrow" />
-            </a>
-          </button>
+              <path
+                d="M4.83059 3.99435L10.5368 9.70059M10.5368 9.70059H4.83059M10.5368 9.70059V3.99435"
+                stroke={pathname === "/" ? `#AFB1AD` : "#202020"}
+                strokeWidth="1.14125"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            {/* <img src={arrowLeft} alt="arrow" /> */}
+          </a>
         </ul>
       </section>
 

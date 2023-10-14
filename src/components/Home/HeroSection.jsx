@@ -33,7 +33,7 @@ export default function HeroSection() {
   return (
     <section
       ref={hero}
-      className="mb-[122px] w-full mt-20 xl:mt-[150px] grid gap-12 lg:grid-cols-[auto_11rem]"
+      className="mb-[122px] w-full pt-20 xl:pt-[150px] grid gap-12 lg:grid-cols-[auto_11rem]"
     >
       <div className="">
         <img

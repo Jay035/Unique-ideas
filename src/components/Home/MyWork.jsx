@@ -70,18 +70,14 @@ export default function MyWork() {
           >
             <img
               onClick={() => showProjectDetails(project?.name)}
-              className={`w-full
+              className={`w-full cursor-pointer
                `}
               src={project?.heroImg}
               alt="work img"
             />
             <div className="mt-4">
-              <h1 className="text-xl mb-1">
-                {project?.name}
-              </h1>
-              <p className="text-xs text-[#AFB1AD]">
-                {project?.subtitle}
-              </p>
+              <h1 className="text-xl mb-1">{project?.name}</h1>
+              <p className="text-xs text-[#AFB1AD]">{project?.subtitle}</p>
             </div>
           </div>
         ))}

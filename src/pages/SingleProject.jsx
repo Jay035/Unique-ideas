@@ -64,15 +64,24 @@ export default function SingleProject() {
     <>
       <Transition />
       <main className="text-white overflow-x-hidden">
-        <div className="bg-[#111111] hero-item text pt-16 md:pt-20">
-          <img
-            onClick={redirect}
-            className="cursor-pointer mx-[9.5vw] w-16 pb-16 md:pb-20 "
-            src={arrowLeftCircle}
-            alt="arrow left"
+        <svg
+          className="mx-[9.5vw] mt-9 mb-[2.31rem]"
+          onClick={redirect}
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M15 18L9 12L15 6"
+            stroke="#202020"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
-          <section className="px-[9.5vw]">
-            <div className="flex items-center gap-2">
+        </svg>
+        {/* <div className="flex items-center gap-2">
               {project?.tag?.map((tag, index) => (
                 <span
                   key={index}
@@ -91,51 +100,74 @@ export default function SingleProject() {
               >
                 {project?.year}
               </span>
-            </div>
-            <h1 className="text-[40px] md:text-5xl xl:text-[120px] pt-4 pb-[42px]">
-              {project?.name}{" "}
-              {project?.proposal && (
-                <span className="text-xl md:text-[32px]">( A Proposal )</span>
-              )}
-            </h1>
-          </section>
-        </div>
+            </div> */}
 
-        <section className="w-full bg-[#111111]">
-          <img className="w-full" src={project?.heroImg} alt="" />
+        <section className="w-full relative">
+          <img className="w-full" src={project?.banner} alt="" />
+          <section className="absolute top-6 md:top-20 left-16 md:left-32 lg:top-56 lg:left-48 md:w-[28rem]">
+            <h1 className="text-xl md:text-4xl lg:text-[4rem] leading-5 font-medium">
+              {project?.name}{" "}
+            </h1>
+            <p className="mb-8 md:mb-16 mt-3 md:mt-6 md:text-xl lg:text-2xl">
+              {project?.tagline}
+            </p>
+            <p className="lg:text-lg text-[#E9D7FE] font-[450]">
+              {project?.subtitle}
+            </p>
+          </section>
         </section>
 
-        <div className="bg-white text-[#344054] pb-10">
-          <section className="px-[9.5vw] py-[100px] bg-white">
-            <div className="grid lg:grid-cols-2 gap-6 lg:gap-0 lg:justify-between mb-[100px]">
-              <h2 className="text-black font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
+        <div className="text-[#344054] pb-10 ">
+          <section className="pt-[4.56rem] pb-[4.38rem] px-[9.5vw]">
+            <div className="">
+              <h2 className="text-black font-[450] text-2xl md:text-[2rem] leading-normal">
                 {project?.overview && "Overview"}
-                {!project?.overview && (
+                {/* {!project?.overview && (
                   <p>
                     Why
                     <span className="text-[#5D5FEF] block">
                       {project?.name} ?
                     </span>{" "}
                   </p>
-                )}
+                )} */}
               </h2>
-              <div className="font-onest flex flex-col gap-4 md:text-xl lg:text-2xl">
-                {project?.why &&
+              {/* <div className="flex flex-col gap-4 md:text-xl lg:text-2xl"> */}
+              {/* {project?.why &&
                   project?.why?.map((item, index) => (
                     <p key={index} className="tracking-[-0.03em]">
                       {item}
                     </p>
-                  ))}
-                {project?.overview &&
-                  project?.overview?.map((item, index) => (
-                    <p key={index} className="tracking-[-0.03em]">
-                      {item}
-                    </p>
-                  ))}
-              </div>
+                  ))} */}
+              {project?.overview && (
+                <p className="leading-6 text-[#344054] md:text-lg mt-6">
+                  {project?.overview}
+                </p>
+              )}
+              {/* </div> */}
+              <section className="mt-12 flex flex-col md:flex-row gap-10 md:gap-[3.4rem]">
+                {/* My role */}
+                <div className="">
+                  <h5 className="text-xl font-[450] md:text-2xl">My Role</h5>
+                  <ul className="flex flex-col gap-1 mt-4">
+                    {project?.myRole?.map((role) => (
+                      <li key={role?.id}>{role?.text}</li>
+                    ))}
+                  </ul>
+                </div>
+                {/* Platform */}
+                <div className="">
+                  <h5 className="text-xl font-[450] md:text-2xl">Platform</h5>
+                  <p className="mt-4">{project?.platform}</p>
+                </div>
+                {/* Year */}
+                <div className="">
+                  <h5 className="text-xl font-[450] md:text-2xl">Year</h5>
+                  <p className="mt-4">{project?.year}</p>
+                </div>
+              </section>
             </div>
 
-            {project?.examples?.length > 0 && (
+            {/* {project?.examples?.length > 0 && (
               <div className="">
                 <p className="flex items-center gap-2 md:text-xl lg:text-2xl">
                   {project.examplesText}{" "}
@@ -148,8 +180,8 @@ export default function SingleProject() {
                     ))}
                 </div>
               </div>
-            )}
-            {project?.name !== "Gifta" && project?.firstMedia && (
+            )} */}
+            {/* {project?.name !== "Gifta" && project?.firstMedia && (
               <video
                 autoPlay
                 loop
@@ -163,11 +195,59 @@ export default function SingleProject() {
                 src={project?.overviewImg}
                 alt="project preview"
               />
-            )}
+            )} */}
             {/* <div className="h-72 w-full bg-slate-200"></div> */}
           </section>
+          {/* Voice of your gamers */}
+          <section className="px-[9.5vw]">
+            <h2 className="text-black mt-4 font-[450] text-2xl md:text-[2rem] leading-normal">
+              Voice of your gamers.
+            </h2>
+            <ul className="flex flex-col gap-4">
+              {project?.voice?.map((voice, index) => (
+                <li key={index} className="md:text-lg">
+                  {voice?.text}
+                </li>
+              ))}
+            </ul>
+          </section>
+          {/* Goal & Target Audience */}
+          <section className="bg-[#E9D7FE] mt-12 mx-[4vw] py-[2.38rem] px-8 flex flex-col md:flex-row gap-10 md:gap-20">
+            {/* Goal */}
+            <div className="">
+              <h2 className="text-black font-semibold text-xl sm:text-2xl mb-4">
+                Goal
+              </h2>
+              <p className="md:text-lg font-[450]">{project?.goal}</p>
+            </div>
+            {/* Target Audience */}
+            <div className="">
+              <h2 className="text-black font-semibold text-xl sm:text-2xl mb-4">
+                Target Audience
+              </h2>
+              <ul className="flex flex-col gap-1 list-disc pl-5">
+                {project?.targetAudience?.map((target, index) => (
+                  <li key={index} className="md:text-lg font-[450]">
+                    {target?.text}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+          {/* Quote */}
+          <section className="my-14 px-[9.5vw] flex items-center flex-col gap-1 text-center">
+            <h2 className="text-lg font-[450]">
+              "The human voice is the most perfect instrument of all."
+            </h2>
+            <p className="text-[#667085] text-sm">Arvo Pärt</p>
+          </section>
+          {/* Gathering Context */}
+          <section className="px-[9.5vw]">
+            <h1 className="text-2xl md:text-[2rem] font-[450] leading-normal">Gathering Context</h1>
+          </section>
+
           {/* WHAT IS ? */}
-          <section className="px-[9.5vw] bg-white">
+          {/* <section className="px-[9.5vw] bg-white">
             <h2 className="text-black font-semibold text-3xl md:text-5xl tracking-[-0.03em]">
               What is <span className="text-[#5D5FEF]">{project?.name} ?</span>
             </h2>
@@ -192,9 +272,6 @@ export default function SingleProject() {
                 alt="overview img"
               />
             )}
-            {/* {!project?.whatImg && (
-            <div className="h-72 w-full mt-12 mb-[100px] bg-slate-200"></div>
-          )} */}
 
             <div className="pt-[74px] lg:py-[74px] flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
               {project?.myContribution && (
@@ -218,7 +295,9 @@ export default function SingleProject() {
                   </h4>
                   <ul className="list-disc md:text-xl lg:text-2xl ml-6">
                     {project?.team?.map((item, index) => (
-                      <li key={index} className="">{item}</li>
+                      <li key={index} className="">
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -234,9 +313,9 @@ export default function SingleProject() {
                 </div>
               )}
             </div>
-          </section>
+          </section> */}
           {/* scope of work */}
-          {project?.name === "OfficeHR" && (
+          {/* {project?.name === "OfficeHR" && (
             <section className="pt-16 pb-12 md::pb-[100px] px-[9.5vw]">
               <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
                 The <span className="text-[#5D5FEF]">Scope of Work</span>
@@ -258,9 +337,9 @@ export default function SingleProject() {
               </div>
               <img className="mt-7" src={officeHRScopeImg} alt="scope img" />
             </section>
-          )}
+          )} */}
           {/* The process */}
-          <section className="pt-16 pb-12 md::pb-[100px] px-[9.5vw]">
+          {/* <section className="pt-16 pb-12 md::pb-[100px] px-[9.5vw]">
             <h2 className="text-black font-semibold py-8 text-3xl md:text-5xl tracking-[-0.03em]">
               {project?.name === "OfficeHR" ? (
                 "Discovery"
@@ -270,7 +349,6 @@ export default function SingleProject() {
                 </p>
               )}
             </h2>
-            {/* primary research */}
             <div className="flex flex-col gap-4 pb-8">
               {project?.primaryResearch?.length > 0 ? (
                 <h3 className="text-black text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
@@ -301,11 +379,18 @@ export default function SingleProject() {
 
               {project?.questionsAsked?.length > 0 && (
                 <div className="font-onest">
-                  <p className="md:text-xl lg:text-2xl tracking-[-0.03em]">{project?.questionsText}</p>
+                  <p className="md:text-xl lg:text-2xl tracking-[-0.03em]">
+                    {project?.questionsText}
+                  </p>
                   <ul className="list-disc ml-6 flex flex-col gap-3 mt-3">
                     {project?.questionsAsked?.length > 0 &&
                       project?.questionsAsked?.map((question, index) => (
-                        <li key={index} className="md:text-xl lg:text-2xl tracking-[-0.03em]">{question}</li>
+                        <li
+                          key={index}
+                          className="md:text-xl lg:text-2xl tracking-[-0.03em]"
+                        >
+                          {question}
+                        </li>
                       ))}
                   </ul>
                 </div>
@@ -314,7 +399,6 @@ export default function SingleProject() {
                 {project?.additionalResearch}
               </p>
             </div>
-            {/* secondary research */}
             {project?.secondaryResearch?.length > 0 && (
               <div className="flex flex-col gap-4">
                 <h3 className="text-black text-xl md:text-[32px] font-semibold tracking-[-0.01em]">
@@ -330,7 +414,6 @@ export default function SingleProject() {
                 ))}
               </div>
             )}
-            {/* Research Synthesis */}
             {project?.researchSynthesis?.length > 0 && (
               <div className="flex flex-col gap-4 pt-12">
                 <h3 className="text-black text-2xl md:text-[32px] font-semibold tracking-[-0.01em]">
@@ -345,7 +428,6 @@ export default function SingleProject() {
                 </ul>
               </div>
             )}
-            {/* Key Takeaways */}
             {project?.keyTakeaways?.length > 0 && (
               <div className="flex flex-col gap-4 pt-12">
                 <h3 className="text-black text-xl sm:text-2xl font-semibold tracking-[-0.01em]">
@@ -370,9 +452,9 @@ export default function SingleProject() {
                 </div>
               </div>
             )}
-          </section>
+          </section> */}
           {/* defining */}
-          <section className="bg-white pb-[82px] px-[9.5vw]">
+          {/* <section className="bg-white pb-[82px] px-[9.5vw]">
             <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               {project?.name === "OfficeHR"
                 ? "Defining our Product Offering"
@@ -395,9 +477,9 @@ export default function SingleProject() {
                 ))}
               </ul>
             </div>
-          </section>
+          </section> */}
           {/* The execution */}
-          <section className="bg-white pb-[82px] px-[9.5vw]">
+          {/* <section className="bg-white pb-[82px] px-[9.5vw]">
             <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               The Execution
             </h2>
@@ -406,17 +488,14 @@ export default function SingleProject() {
             </p>
             {project?.executionImg && (
               <img
-              className="w-fit mx-auto"
+                className="w-fit mx-auto"
                 src={project?.executionImg}
                 alt="project execution preview"
               />
             )}
-            {/* {!project?.executionImg && (
-              <div className="bg-slate-300 h-[82px] w-full"></div>
-            )} */}
-          </section>
+          </section> */}
           {/* The design */}
-          <section className="bg-white pb-[82px] px-[9.5vw]">
+          {/* <section className="bg-white pb-[82px] px-[9.5vw]">
             <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
               {project?.name === "ID-UNILAG" ? "Designs" : "The Design"}
             </h2>
@@ -448,15 +527,12 @@ export default function SingleProject() {
                   {design?.img && (
                     <img src={design?.img} alt="project preview" />
                   )}
-                  {/* {!design?.video && (
-                  <div className="bg-slate-300 h-[82px] w-full"></div>
-                )} */}
                 </div>
               ))}
             </div>
-          </section>
+          </section> */}
           {/* Testing */}
-          {project?.testing?.length > 0 && (
+          {/* {project?.testing?.length > 0 && (
             <section className="bg-white pb-[82px] px-[9.5vw]">
               <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Testing
@@ -470,9 +546,9 @@ export default function SingleProject() {
                 </p>
               ))}
             </section>
-          )}
+          )} */}
           {/* Challenges and Lessons */}
-          <section className="bg-white pb-[82px] px-[9.5vw]">
+          {/* <section className="bg-white pb-[82px] px-[9.5vw]">
             {project?.challengeAndLessonsText && (
               <h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl tracking-[-0.03em]">
                 Challenges and Lessons
@@ -503,7 +579,7 @@ export default function SingleProject() {
                 ))}
               </ul>
             )}
-          </section>
+          </section> */}
         </div>
       </main>
     </>

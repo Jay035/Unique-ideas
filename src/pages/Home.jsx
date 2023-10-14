@@ -55,9 +55,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div ref={container}>
-      <Transition />
-      <main className="wrapper px-[9.5vw] text-white bg-[#111111] w-full">
+    <div ref={container} className="bg-[#111111]">
+      <main className="wrapper px-[9.5vw] text-white w-full">
         <HeroSection />
         <MyWork />
         {/* <AboutMe /> */}
@@ -68,6 +67,7 @@ export default function Home() {
         <Testimonials />
       </main>
       <Footer />
+      <Transition />
     </div>
   );
 }

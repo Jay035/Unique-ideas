@@ -4,7 +4,7 @@ export default function Testimonials() {
   return (
     <section className="my-[5.9rem] p-6 md:px-10 lg:px-[9rem] flex items-center flex-col text-center gap-[1.62rem] lg:py-[5.5rem] bg-[#171717] rounded-[0.625rem] border border-[#302F2F]">
       <img src={avatar} alt="avatar" />
-      <p>
+      <p className="font-SuisseWorks-Regular">
         Ifeoma is a highly skilled and experienced product designer with a deep
         understanding of the design process and user research. She is also an
         excellent communicator and collaborator

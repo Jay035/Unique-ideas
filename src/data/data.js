@@ -1,10 +1,10 @@
-
 // Emojis
 import emoji1 from "../assets/expression-1.svg";
 import emoji2 from "../assets/expression-2.svg";
 import happyEmoji from "../assets/happy.svg";
 // VOOP AI
 import VoopImg from "../assets/VOOP AI.png";
+import VoopBanner from "../assets/VOOP header-img.png";
 
 // OfficeHR
 import officeHrHeroImg from "../assets/officeHR.png";
@@ -66,8 +66,9 @@ export const projectsData = [
   // VOOP AI
   {
     name: "VOOP AI",
+    tagline: "AI- powered loops making feedback rewardingly easier",
     subtitle: "Data Infrastructure & Analytics",
-    year: "2022",
+    year: "2023",
     yearColor: "#5D5FEF",
     objectPosition: "object-right",
     proposal: false,
@@ -75,11 +76,70 @@ export const projectsData = [
     tag: ["HR", "People Management"],
     disabled: false,
     heroImg: VoopImg,
+    banner: VoopBanner,
     // heroImgMobile: officeHrHeroImg2,
     // heroImgDesktop: officeHrHeroImgDesktop,
-    overview: "",
+    overview:
+      "VOOP is a natural processing AI-Powered voice tool focused on gaming use cases, with additional capabilities, picking semantics and demographic information, integrated with major gaming platforms and communities like unreal engine, discord, amongst others.",
     overviewImg: "",
     firstMedia: OfficeHRfirstMedia,
+    myRole: [
+      {
+        id: 1,
+        text: "User Research",
+      },
+      {
+        id: 2,
+        text: "Design Leadership",
+      },
+      {
+        id: 3,
+        text: "Journey Mapping",
+      },
+      {
+        id: 4,
+        text: "Sketching",
+      },
+      {
+        id: 5,
+        text: "Screen Flows",
+      },
+      {
+        id: 6,
+        text: "Visual Design",
+      },
+      {
+        id: 7,
+        text: "Interaction Design",
+      },
+    ],
+    platform: "Web",
+    voice: [
+      {
+        text: "VOOP aims to showcase how AI-driven personalization can revolutionalize user experience for gaming. At VOOP, we believe that capturing voice feedback by leveraging intelligent algorithms and user data analysis will provide more engaging gaming experiences, opportunities for immersion and true player ownership.",
+      },
+      {
+        text: "My primary responsibility at VOOP was to create an interface that communicates its purpose; A landing page, and a Progressive Web App that showcases high priority findings with the key focus being on actionable insights for each users profile, alongside a private prompt creation test tool that provides firms the opportunity to capture voice feedbacks from other platforms like social media via sharing a link",
+      },
+    ],
+    goal: "To help gaming platforms flourish better by providing the best intelligence products and services. This is aimed at enhancing gamers experience and satisfaction and aid game developers to build and maintain better economies",
+    targetAudience: [
+      {
+        text: "Gamers (Recreational, Professional)",
+      },
+      {
+        text: "Gaming companies with 1000 - 100,000 users",
+      },
+      {
+        text: "Community Managers",
+      },
+      {
+        text: "Game Testers",
+      },
+      {
+        text: "Venture Capitalists with gaming investments",
+      },
+    ],
     why: [
       "Most existing software for managing HR focuses on serving the needs of huge enterprises, leaving out middle sized or small companies that are just starting to scale.",
       "When i was approached to be a member of the team to create OfficeHR, I was delighted by the idea on what it is to be about. Having experienced working in start-ups, I could relate to how difficult carrying out HR processes was to the management. From hiring, onboarding, team management down to payments was a struggle. To these firms especially SMEs, it led to a lack of organization, time consuming in administrative tasks and even difficulty in tracking employee information and performance.",
